@@ -1,4 +1,4 @@
-from project import get_location, get_amenities, order, comment
+from 15minscity import get_location, get_amenities, order, comment
 import pytest
 from shapely.geometry import MultiPoint
 import geopandas as gpd
