@@ -1,0 +1,8 @@
+osmnx
+geopy
+IPython
+scikit-learn
+folium
+inflect
+shapely
+pytest
