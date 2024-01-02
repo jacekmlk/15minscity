@@ -11,43 +11,44 @@
     
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
     
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_bf63bd6a2303fcc2d6be31a82f9440ae {
+                #map_adf0e48439bd1785f3897734063e75bd {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
                     left: 0.0%;
                     top: 0.0%;
                 }
+                .leaflet-container { font-size: 1rem; }
             </style>
         
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_bf63bd6a2303fcc2d6be31a82f9440ae" ></div>
+            <div class="folium-map" id="map_adf0e48439bd1785f3897734063e75bd" ></div>
         
 </body>
 <script>
     
     
-            var map_bf63bd6a2303fcc2d6be31a82f9440ae = L.map(
-                "map_bf63bd6a2303fcc2d6be31a82f9440ae",
+            var map_adf0e48439bd1785f3897734063e75bd = L.map(
+                "map_adf0e48439bd1785f3897734063e75bd",
                 {
-                    center: [51.1076407, 17.0943705],
+                    center: [51.1061899, 17.0868905],
                     crs: L.CRS.EPSG3857,
                     zoom: 14,
                     zoomControl: true,
@@ -59,1818 +60,1391 @@
 
         
     
-            var tile_layer_c1286a916c801a30c6ac5001adac54f1 = L.tileLayer(
-                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
-                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            var tile_layer_dc91602e7d79ee4fea16201f94672d0a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u003ca href=\u0027https://www.openstreetmap.org/about/\u0027\u003eOpenStreetMaps contributors\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
         
     
-            var circle_ae03709042a6fc62870044d8872ffcaa = L.circle(
-                [51.1076407, 17.0943705],
+            tile_layer_dc91602e7d79ee4fea16201f94672d0a.addTo(map_adf0e48439bd1785f3897734063e75bd);
+        
+    
+            var circle_ce8410e3d97334a742cd5cec3ad593bb = L.circle(
+                [51.1061899, 17.0868905],
                 {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-        var popup_6c8ef5d6dcb948884e9ac2cb01ae33fc = L.popup({"maxWidth": "100%"});
+        var popup_c2fbb965637f655ed057001e00900b9b = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_d5f9372c611c27469547c610836b8747 = $(`<div id="html_d5f9372c611c27469547c610836b8747" style="width: 100.0%; height: 100.0%;">Your location</div>`)[0];
-                popup_6c8ef5d6dcb948884e9ac2cb01ae33fc.setContent(html_d5f9372c611c27469547c610836b8747);
+                var html_8d795d9f5281c48563946a90cef1525b = $(`<div id="html_8d795d9f5281c48563946a90cef1525b" style="width: 100.0%; height: 100.0%;">Your location</div>`)[0];
+                popup_c2fbb965637f655ed057001e00900b9b.setContent(html_8d795d9f5281c48563946a90cef1525b);
             
         
 
-        circle_ae03709042a6fc62870044d8872ffcaa.bindPopup(popup_6c8ef5d6dcb948884e9ac2cb01ae33fc)
+        circle_ce8410e3d97334a742cd5cec3ad593bb.bindPopup(popup_c2fbb965637f655ed057001e00900b9b)
         ;
 
         
     
     
-            var marker_11e39473acc6209f023be0e7f58e1a36 = L.marker(
-                [51.1091469, 17.097065],
+            var marker_00c9e3a1275832998b341257dae040d0 = L.marker(
+                [51.1091965, 17.0970584],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_86506c7282a5f90f577ab44126cd871d = L.AwesomeMarkers.icon(
+            var icon_76fd9ad5b5b8c6b3995d554e3331c0d5 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_11e39473acc6209f023be0e7f58e1a36.setIcon(icon_86506c7282a5f90f577ab44126cd871d);
+            marker_00c9e3a1275832998b341257dae040d0.setIcon(icon_76fd9ad5b5b8c6b3995d554e3331c0d5);
         
     
-        var popup_2f1de6584c6e3a318c53ba79ebc215b4 = L.popup({"maxWidth": "100%"});
+        var popup_13f8aa299dbcd5e1250303c359df4681 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_32dd4189f66cee1005316f1a6dd9daad = $(`<div id="html_32dd4189f66cee1005316f1a6dd9daad" style="width: 100.0%; height: 100.0%;">Restaurant Casa Della Pizza<br>Adress: Partyzantów 21<br>Distance:  314 m</div>`)[0];
-                popup_2f1de6584c6e3a318c53ba79ebc215b4.setContent(html_32dd4189f66cee1005316f1a6dd9daad);
+                var html_260f698e72b1440b3bef2221f45bbf1a = $(`<div id="html_260f698e72b1440b3bef2221f45bbf1a" style="width: 100.0%; height: 100.0%;">Restaurant Casa Della Pizza<br>Adress: Partyzantów 21<br>Distance:  844 m</div>`)[0];
+                popup_13f8aa299dbcd5e1250303c359df4681.setContent(html_260f698e72b1440b3bef2221f45bbf1a);
             
         
 
-        marker_11e39473acc6209f023be0e7f58e1a36.bindPopup(popup_2f1de6584c6e3a318c53ba79ebc215b4)
+        marker_00c9e3a1275832998b341257dae040d0.bindPopup(popup_13f8aa299dbcd5e1250303c359df4681)
         ;
 
         
     
     
-            var marker_200cfe53ca63945d6df74c28d5498b24 = L.marker(
-                [51.1064223, 17.1081294],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_70c595bc86bf1a7b9659a8a837de016d = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_200cfe53ca63945d6df74c28d5498b24.setIcon(icon_70c595bc86bf1a7b9659a8a837de016d);
-        
-    
-        var popup_e1a0310c3a7ebf35cf7912611d3552be = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_29d6f65c430298b175c4ec0b03e944b1 = $(`<div id="html_29d6f65c430298b175c4ec0b03e944b1" style="width: 100.0%; height: 100.0%;">Cafe Cukiernia Magdalenka<br>Adress: Edwarda Dembowskiego 18<br>Distance:  1032 m</div>`)[0];
-                popup_e1a0310c3a7ebf35cf7912611d3552be.setContent(html_29d6f65c430298b175c4ec0b03e944b1);
-            
-        
-
-        marker_200cfe53ca63945d6df74c28d5498b24.bindPopup(popup_e1a0310c3a7ebf35cf7912611d3552be)
-        ;
-
-        
-    
-    
-            var marker_6ef4c4eb6ac876c69ddb957351078f8f = L.marker(
+            var marker_51974dd04ae07da8918952434a325417 = L.marker(
                 [51.1078271, 17.093599],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_e8afa483f90448a8ad8758fad5a1a1f0 = L.AwesomeMarkers.icon(
+            var icon_d875b0213783200c31afbd82f7514040 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
             );
-            marker_6ef4c4eb6ac876c69ddb957351078f8f.setIcon(icon_e8afa483f90448a8ad8758fad5a1a1f0);
+            marker_51974dd04ae07da8918952434a325417.setIcon(icon_d875b0213783200c31afbd82f7514040);
         
     
-        var popup_a83f777bc50bc649a62dcd0f48ab1fa8 = L.popup({"maxWidth": "100%"});
+        var popup_1110efa56c88e5ca01a7420512338717 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_bf2528ba1ed1a4f0c7c863792ff73de4 = $(`<div id="html_bf2528ba1ed1a4f0c7c863792ff73de4" style="width: 100.0%; height: 100.0%;">Kindergarten Punkt Przedszkolny Niziołki<br>Adress: Partyzantów 12b<br>Distance:  110 m</div>`)[0];
-                popup_a83f777bc50bc649a62dcd0f48ab1fa8.setContent(html_bf2528ba1ed1a4f0c7c863792ff73de4);
+                var html_82ed5a6e36387967575cadc35c8e3cbc = $(`<div id="html_82ed5a6e36387967575cadc35c8e3cbc" style="width: 100.0%; height: 100.0%;">Kindergarten Punkt Przedszkolny Niziołki<br>Adress: Partyzantów 12b<br>Distance:  550 m</div>`)[0];
+                popup_1110efa56c88e5ca01a7420512338717.setContent(html_82ed5a6e36387967575cadc35c8e3cbc);
             
         
 
-        marker_6ef4c4eb6ac876c69ddb957351078f8f.bindPopup(popup_a83f777bc50bc649a62dcd0f48ab1fa8)
+        marker_51974dd04ae07da8918952434a325417.bindPopup(popup_1110efa56c88e5ca01a7420512338717)
         ;
 
         
     
     
-            var marker_615eee9ddf73792b5a26ec82d318363f = L.marker(
+            var marker_e877de9e78c4b61099748c3a7b2a00f2 = L.marker(
                 [51.109263, 17.097559],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_b971cbaf2448e3c7908338797fbff79b = L.AwesomeMarkers.icon(
+            var icon_3d55be5c554edebc53c5acd33998a7bc = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_615eee9ddf73792b5a26ec82d318363f.setIcon(icon_b971cbaf2448e3c7908338797fbff79b);
+            marker_e877de9e78c4b61099748c3a7b2a00f2.setIcon(icon_3d55be5c554edebc53c5acd33998a7bc);
         
     
-        var popup_204524ae0c2bc9cfc0ac3b4ad71de1eb = L.popup({"maxWidth": "100%"});
+        var popup_0fda2377bc223e212ad1b190d4601042 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_1aca7d6555b84789e283da42690149ab = $(`<div id="html_1aca7d6555b84789e283da42690149ab" style="width: 100.0%; height: 100.0%;">Pharmacy Pod Złotym Jeleniem<br>Adress: - -<br>Distance:  387 m</div>`)[0];
-                popup_204524ae0c2bc9cfc0ac3b4ad71de1eb.setContent(html_1aca7d6555b84789e283da42690149ab);
+                var html_b8bb8e45242eeb23c28e4a5547ed0114 = $(`<div id="html_b8bb8e45242eeb23c28e4a5547ed0114" style="width: 100.0%; height: 100.0%;">Pharmacy Pod Złotym Jeleniem<br>Adress: - -<br>Distance:  919 m</div>`)[0];
+                popup_0fda2377bc223e212ad1b190d4601042.setContent(html_b8bb8e45242eeb23c28e4a5547ed0114);
             
         
 
-        marker_615eee9ddf73792b5a26ec82d318363f.bindPopup(popup_204524ae0c2bc9cfc0ac3b4ad71de1eb)
+        marker_e877de9e78c4b61099748c3a7b2a00f2.bindPopup(popup_0fda2377bc223e212ad1b190d4601042)
         ;
 
         
     
     
-            var marker_f3a6947dfaa403a50c9d395ea48f590d = L.marker(
+            var marker_f9e3ac2c0adfd74a989393158e575dd4 = L.marker(
                 [51.1096015, 17.1000548],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_bbff8d0f7dd23906167e4eda13875da2 = L.AwesomeMarkers.icon(
+            var icon_00fe3f6c42d68d26e50823d6c309ae30 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_f3a6947dfaa403a50c9d395ea48f590d.setIcon(icon_bbff8d0f7dd23906167e4eda13875da2);
+            marker_f9e3ac2c0adfd74a989393158e575dd4.setIcon(icon_00fe3f6c42d68d26e50823d6c309ae30);
         
     
-        var popup_8d770dc866044ecd62f2bb886b3bdf3e = L.popup({"maxWidth": "100%"});
+        var popup_100381c8eccdc4525815a7dcd581570a = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_7fc6072759c4defe799d8550a0a3c6b1 = $(`<div id="html_7fc6072759c4defe799d8550a0a3c6b1" style="width: 100.0%; height: 100.0%;">Pharmacy Miętowa<br>Adress: - -<br>Distance:  530 m</div>`)[0];
-                popup_8d770dc866044ecd62f2bb886b3bdf3e.setContent(html_7fc6072759c4defe799d8550a0a3c6b1);
+                var html_d2dde1be7375bc201ed20f32e36f3909 = $(`<div id="html_d2dde1be7375bc201ed20f32e36f3909" style="width: 100.0%; height: 100.0%;">Pharmacy Miętowa<br>Adress: - -<br>Distance:  1062 m</div>`)[0];
+                popup_100381c8eccdc4525815a7dcd581570a.setContent(html_d2dde1be7375bc201ed20f32e36f3909);
             
         
 
-        marker_f3a6947dfaa403a50c9d395ea48f590d.bindPopup(popup_8d770dc866044ecd62f2bb886b3bdf3e)
+        marker_f9e3ac2c0adfd74a989393158e575dd4.bindPopup(popup_100381c8eccdc4525815a7dcd581570a)
         ;
 
         
     
     
-            var marker_5aacabb58270d43f3e05f25e450e7088 = L.marker(
-                [51.1016498, 17.1027905],
+            var marker_5b6fea0087bf41ba9ec7dbb90541e287 = L.marker(
+                [51.1051687, 17.0792018],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_c6876b6d85f27aef600ee12abf0ed9b2 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
-            );
-            marker_5aacabb58270d43f3e05f25e450e7088.setIcon(icon_c6876b6d85f27aef600ee12abf0ed9b2);
-        
-    
-        var popup_0ff0a634ed4b9bfac4daee0c7aa64896 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_54dffc380679ded13978070892c4f2c1 = $(`<div id="html_54dffc380679ded13978070892c4f2c1" style="width: 100.0%; height: 100.0%;">Pharmacy Pod Jaworem<br>Adress: - -<br>Distance:  1126 m</div>`)[0];
-                popup_0ff0a634ed4b9bfac4daee0c7aa64896.setContent(html_54dffc380679ded13978070892c4f2c1);
-            
-        
-
-        marker_5aacabb58270d43f3e05f25e450e7088.bindPopup(popup_0ff0a634ed4b9bfac4daee0c7aa64896)
-        ;
-
-        
-    
-    
-            var marker_069d7ae2ef5ea2e3e3650683aca64679 = L.marker(
-                [51.1060195, 17.104916],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_16606e77d57ff4fcbd73cacdc8c04ad6 = L.AwesomeMarkers.icon(
+            var icon_7d753ebdc66d3c037a82bbca41d52b03 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_069d7ae2ef5ea2e3e3650683aca64679.setIcon(icon_16606e77d57ff4fcbd73cacdc8c04ad6);
+            marker_5b6fea0087bf41ba9ec7dbb90541e287.setIcon(icon_7d753ebdc66d3c037a82bbca41d52b03);
         
     
-        var popup_383751434d7ab9407e4b8e7ae2349eba = L.popup({"maxWidth": "100%"});
+        var popup_6a01af4d8e93cdfcc26c180062aab45b = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_7b075ebcd7645a04c29044b432ab76c4 = $(`<div id="html_7b075ebcd7645a04c29044b432ab76c4" style="width: 100.0%; height: 100.0%;">Fast_food Pizza Station<br>Adress: Edwarda Dembowskiego 63<br>Distance:  889 m</div>`)[0];
-                popup_383751434d7ab9407e4b8e7ae2349eba.setContent(html_7b075ebcd7645a04c29044b432ab76c4);
+                var html_e01863591ee55fb1256594fb5507e66f = $(`<div id="html_e01863591ee55fb1256594fb5507e66f" style="width: 100.0%; height: 100.0%;">Fast_food Pizza Farina<br>Adress: Mikołaja Kopernika 1<br>Distance:  683 m</div>`)[0];
+                popup_6a01af4d8e93cdfcc26c180062aab45b.setContent(html_e01863591ee55fb1256594fb5507e66f);
             
         
 
-        marker_069d7ae2ef5ea2e3e3650683aca64679.bindPopup(popup_383751434d7ab9407e4b8e7ae2349eba)
+        marker_5b6fea0087bf41ba9ec7dbb90541e287.bindPopup(popup_6a01af4d8e93cdfcc26c180062aab45b)
         ;
 
         
     
     
-            var marker_5007098913eae51e2d91ff0552808e5f = L.marker(
-                [51.1058711, 17.1049977],
+            var marker_05f1aa3449e9efacb149729a7090cb8e = L.marker(
+                [51.1035388, 17.0744902],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_c58945aeb09a0b03eb12636d60d4b116 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            var icon_a08447f62c2977e5c1e993eb633e758e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_5007098913eae51e2d91ff0552808e5f.setIcon(icon_c58945aeb09a0b03eb12636d60d4b116);
+            marker_05f1aa3449e9efacb149729a7090cb8e.setIcon(icon_a08447f62c2977e5c1e993eb633e758e);
         
     
-        var popup_fef0437d5af731d44f4b90bb6d6f6872 = L.popup({"maxWidth": "100%"});
+        var popup_94409337127f14541491ac612e9a025e = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_b70d036e721ab3641d96bd7b21cfe91f = $(`<div id="html_b70d036e721ab3641d96bd7b21cfe91f" style="width: 100.0%; height: 100.0%;">Convenience Rożek<br>Adress: Spółdzielcza 1b<br>Distance:  889 m</div>`)[0];
-                popup_fef0437d5af731d44f4b90bb6d6f6872.setContent(html_b70d036e721ab3641d96bd7b21cfe91f);
+                var html_8cc3dae601b44a537accfc08ceb66b51 = $(`<div id="html_8cc3dae601b44a537accfc08ceb66b51" style="width: 100.0%; height: 100.0%;">Fast_food Karczma Koala<br>Adress: - -<br>Distance:  1141 m</div>`)[0];
+                popup_94409337127f14541491ac612e9a025e.setContent(html_8cc3dae601b44a537accfc08ceb66b51);
             
         
 
-        marker_5007098913eae51e2d91ff0552808e5f.bindPopup(popup_fef0437d5af731d44f4b90bb6d6f6872)
+        marker_05f1aa3449e9efacb149729a7090cb8e.bindPopup(popup_94409337127f14541491ac612e9a025e)
         ;
 
         
     
     
-            var marker_f87bd2c7503536157d5abe031a8e4865 = L.marker(
-                [51.1061447, 17.1041436],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_2fc5a80be3a05783cd99670fa4699c53 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
-            );
-            marker_f87bd2c7503536157d5abe031a8e4865.setIcon(icon_2fc5a80be3a05783cd99670fa4699c53);
-        
-    
-        var popup_9dbd8a8c012a51358fc562b2ff6f455b = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_b8e05f34e2e2bcf7a5e1f04c7b50d4b7 = $(`<div id="html_b8e05f34e2e2bcf7a5e1f04c7b50d4b7" style="width: 100.0%; height: 100.0%;">Convenience Żabka<br>Adress: Edwarda Dembowskiego 57<br>Distance:  781 m</div>`)[0];
-                popup_9dbd8a8c012a51358fc562b2ff6f455b.setContent(html_b8e05f34e2e2bcf7a5e1f04c7b50d4b7);
-            
-        
-
-        marker_f87bd2c7503536157d5abe031a8e4865.bindPopup(popup_9dbd8a8c012a51358fc562b2ff6f455b)
-        ;
-
-        
-    
-    
-            var marker_190590821fe21b01e8f68740c266623f = L.marker(
-                [51.1029745, 17.084762],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_76190da9008fa6007147047bc3ca8a1f = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
-            );
-            marker_190590821fe21b01e8f68740c266623f.setIcon(icon_76190da9008fa6007147047bc3ca8a1f);
-        
-    
-        var popup_253a9984e1b14eef05757e41ff961acc = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_be719a1bcf53fb2579892bbc9145bfc2 = $(`<div id="html_be719a1bcf53fb2579892bbc9145bfc2" style="width: 100.0%; height: 100.0%;">Convenience Krzyś<br>Adress: - -<br>Distance:  1061 m</div>`)[0];
-                popup_253a9984e1b14eef05757e41ff961acc.setContent(html_be719a1bcf53fb2579892bbc9145bfc2);
-            
-        
-
-        marker_190590821fe21b01e8f68740c266623f.bindPopup(popup_253a9984e1b14eef05757e41ff961acc)
-        ;
-
-        
-    
-    
-            var marker_8ccdbec30a0376f5979f1e8dfef6fe87 = L.marker(
+            var marker_5e1f1dd5ad25b0f0492f7685c04d7799 = L.marker(
                 [51.1095683, 17.0998723],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_03d8dbfbcea83e82093d85842d9afa02 = L.AwesomeMarkers.icon(
+            var icon_2b0fdb7cb06cf1ec9f45cd4c17bbf9c5 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
             );
-            marker_8ccdbec30a0376f5979f1e8dfef6fe87.setIcon(icon_03d8dbfbcea83e82093d85842d9afa02);
+            marker_5e1f1dd5ad25b0f0492f7685c04d7799.setIcon(icon_2b0fdb7cb06cf1ec9f45cd4c17bbf9c5);
         
     
-        var popup_9a7622e79c6909151991951154d95df5 = L.popup({"maxWidth": "100%"});
+        var popup_98ac4d6998b865b4b93900ea30d7407a = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_48004aed534d157c797261c5f0bcd35a = $(`<div id="html_48004aed534d157c797261c5f0bcd35a" style="width: 100.0%; height: 100.0%;">Convenience Żabka<br>Adress: Partyzantów 35<br>Distance:  530 m</div>`)[0];
-                popup_9a7622e79c6909151991951154d95df5.setContent(html_48004aed534d157c797261c5f0bcd35a);
+                var html_a7301f8d13196ca081c272e1b04e8630 = $(`<div id="html_a7301f8d13196ca081c272e1b04e8630" style="width: 100.0%; height: 100.0%;">Convenience Żabka<br>Adress: Partyzantów 35<br>Distance:  1062 m</div>`)[0];
+                popup_98ac4d6998b865b4b93900ea30d7407a.setContent(html_a7301f8d13196ca081c272e1b04e8630);
             
         
 
-        marker_8ccdbec30a0376f5979f1e8dfef6fe87.bindPopup(popup_9a7622e79c6909151991951154d95df5)
+        marker_5e1f1dd5ad25b0f0492f7685c04d7799.bindPopup(popup_98ac4d6998b865b4b93900ea30d7407a)
         ;
 
         
     
     
-            var marker_0b051f0101b32f9e895f95edeccd5d4f = L.marker(
+            var marker_07942c4b02153a78d1339eb1dc991343 = L.marker(
+                [51.1041045, 17.0750633],
+                {}
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
+        
+    
+            var icon_0e22e6d5de1dc7c587f10c6704e2ffd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_07942c4b02153a78d1339eb1dc991343.setIcon(icon_0e22e6d5de1dc7c587f10c6704e2ffd0);
+        
+    
+        var popup_59640319fa48ab6249aa3eedd64ea113 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3becda7b8e1b808e0f1081393e28ab08 = $(`<div id="html_3becda7b8e1b808e0f1081393e28ab08" style="width: 100.0%; height: 100.0%;">Cafe Laguna Bistro<br>Adress: - -<br>Distance:  1061 m</div>`)[0];
+                popup_59640319fa48ab6249aa3eedd64ea113.setContent(html_3becda7b8e1b808e0f1081393e28ab08);
+            
+        
+
+        marker_07942c4b02153a78d1339eb1dc991343.bindPopup(popup_59640319fa48ab6249aa3eedd64ea113)
+        ;
+
+        
+    
+    
+            var marker_04cce0e573257773c66702ebd7c01d5e = L.marker(
+                [51.1056602, 17.0760455],
+                {}
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
+        
+    
+            var icon_be259356b348b98ebf61be8565a385a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_04cce0e573257773c66702ebd7c01d5e.setIcon(icon_be259356b348b98ebf61be8565a385a2);
+        
+    
+        var popup_753b53162ad0a5a54491ec376aefc1b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30af1738272d5d92597f341b8c32c519 = $(`<div id="html_30af1738272d5d92597f341b8c32c519" style="width: 100.0%; height: 100.0%;">Fast_food Aston Burger<br>Adress: - -<br>Distance:  927 m</div>`)[0];
+                popup_753b53162ad0a5a54491ec376aefc1b2.setContent(html_30af1738272d5d92597f341b8c32c519);
+            
+        
+
+        marker_04cce0e573257773c66702ebd7c01d5e.bindPopup(popup_753b53162ad0a5a54491ec376aefc1b2)
+        ;
+
+        
+    
+    
+            var marker_d3264e2d6e9d1d8dba8dfc11401539ed = L.marker(
+                [51.1049536, 17.079863],
+                {}
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
+        
+    
+            var icon_9d040f3d8ce76b83509bcb6587581382 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d3264e2d6e9d1d8dba8dfc11401539ed.setIcon(icon_9d040f3d8ce76b83509bcb6587581382);
+        
+    
+        var popup_41a5a6e4e539bcf2787153b4d062379a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_515009f3a6a45074618a042cc4533e08 = $(`<div id="html_515009f3a6a45074618a042cc4533e08" style="width: 100.0%; height: 100.0%;">Restaurant Kubuś Puchatek<br>Adress: - -<br>Distance:  626 m</div>`)[0];
+                popup_41a5a6e4e539bcf2787153b4d062379a.setContent(html_515009f3a6a45074618a042cc4533e08);
+            
+        
+
+        marker_d3264e2d6e9d1d8dba8dfc11401539ed.bindPopup(popup_41a5a6e4e539bcf2787153b4d062379a)
+        ;
+
+        
+    
+    
+            var marker_e2107e3d72b03a19c21a9c4534f2f152 = L.marker(
+                [51.1077141, 17.0783695],
+                {}
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
+        
+    
+            var icon_7d90da3942f4c568860ce584d2691a61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e2107e3d72b03a19c21a9c4534f2f152.setIcon(icon_7d90da3942f4c568860ce584d2691a61);
+        
+    
+        var popup_6154e2a87b21936d30b4df89752b563f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c14206bc5ad1cb58264addd332db76c = $(`<div id="html_7c14206bc5ad1cb58264addd332db76c" style="width: 100.0%; height: 100.0%;">Restaurant Tarasowa<br>Adress: Wystawowa 1<br>Distance:  802 m</div>`)[0];
+                popup_6154e2a87b21936d30b4df89752b563f.setContent(html_7c14206bc5ad1cb58264addd332db76c);
+            
+        
+
+        marker_e2107e3d72b03a19c21a9c4534f2f152.bindPopup(popup_6154e2a87b21936d30b4df89752b563f)
+        ;
+
+        
+    
+    
+            var marker_509a0949109d014e99079b025194b5a3 = L.marker(
                 [51.114086, 17.0913233],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_63a51befd957fcb5e55e02154c3054b7 = L.AwesomeMarkers.icon(
+            var icon_d4306dd49b1f4858a618df3f6fed4c6f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_0b051f0101b32f9e895f95edeccd5d4f.setIcon(icon_63a51befd957fcb5e55e02154c3054b7);
+            marker_509a0949109d014e99079b025194b5a3.setIcon(icon_d4306dd49b1f4858a618df3f6fed4c6f);
         
     
-        var popup_c86248d9fd2d607e47ba3a57b006230c = L.popup({"maxWidth": "100%"});
+        var popup_cde61db2d9510e77dbb097dbacb2eead = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_90b23a3a2feb1fb67999414e26600e96 = $(`<div id="html_90b23a3a2feb1fb67999414e26600e96" style="width: 100.0%; height: 100.0%;">Pub Przestrzeń<br>Adress: aleja Ignacego Jana Paderewskiego 35<br>Distance:  987 m</div>`)[0];
-                popup_c86248d9fd2d607e47ba3a57b006230c.setContent(html_90b23a3a2feb1fb67999414e26600e96);
+                var html_6ad5d8e87a0bc0e138201f52845f0b52 = $(`<div id="html_6ad5d8e87a0bc0e138201f52845f0b52" style="width: 100.0%; height: 100.0%;">Pub Przestrzeń<br>Adress: aleja Ignacego Jana Paderewskiego 35<br>Distance:  1089 m</div>`)[0];
+                popup_cde61db2d9510e77dbb097dbacb2eead.setContent(html_6ad5d8e87a0bc0e138201f52845f0b52);
             
         
 
-        marker_0b051f0101b32f9e895f95edeccd5d4f.bindPopup(popup_c86248d9fd2d607e47ba3a57b006230c)
+        marker_509a0949109d014e99079b025194b5a3.bindPopup(popup_cde61db2d9510e77dbb097dbacb2eead)
         ;
 
         
     
     
-            var marker_a4a5458c34841c07dadb7038d75129fa = L.marker(
+            var marker_769de786848721caf38fdf3b45f052bf = L.marker(
                 [51.1098269, 17.0954327],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_31b62501b84c50002e5f37da6080fdab = L.AwesomeMarkers.icon(
+            var icon_e64dd3aed8d06e61f5467179cbf369bf = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
             );
-            marker_a4a5458c34841c07dadb7038d75129fa.setIcon(icon_31b62501b84c50002e5f37da6080fdab);
+            marker_769de786848721caf38fdf3b45f052bf.setIcon(icon_e64dd3aed8d06e61f5467179cbf369bf);
         
     
-        var popup_7ad6b7aaeee8f88152747d75bcde6946 = L.popup({"maxWidth": "100%"});
+        var popup_0f52f9f6f2c00966ba8c0b03fe379704 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_392e073c6bba9d580cc1594825975b05 = $(`<div id="html_392e073c6bba9d580cc1594825975b05" style="width: 100.0%; height: 100.0%;">School Szkoła Podstawowa nr 45<br>Adress: - -<br>Distance:  386 m</div>`)[0];
-                popup_7ad6b7aaeee8f88152747d75bcde6946.setContent(html_392e073c6bba9d580cc1594825975b05);
+                var html_bd53b4c149a789e9c361d277f0935560 = $(`<div id="html_bd53b4c149a789e9c361d277f0935560" style="width: 100.0%; height: 100.0%;">School Szkoła Podstawowa nr 45<br>Adress: - -<br>Distance:  871 m</div>`)[0];
+                popup_0f52f9f6f2c00966ba8c0b03fe379704.setContent(html_bd53b4c149a789e9c361d277f0935560);
             
         
 
-        marker_a4a5458c34841c07dadb7038d75129fa.bindPopup(popup_7ad6b7aaeee8f88152747d75bcde6946)
+        marker_769de786848721caf38fdf3b45f052bf.bindPopup(popup_0f52f9f6f2c00966ba8c0b03fe379704)
         ;
 
         
     
     
-            var marker_fba67d341288aaa819b9afde45caaa59 = L.marker(
-                [51.1014441, 17.1036573],
+            var marker_5972e0fc89a94dd0db3abf44c7bf84da = L.marker(
+                [51.1039165, 17.0811181],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_d0f8f809a54916f62fa7815ea89a1904 = L.AwesomeMarkers.icon(
+            var icon_39a2b19b2691020b6b92cde6eb656ca2 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
             );
-            marker_fba67d341288aaa819b9afde45caaa59.setIcon(icon_d0f8f809a54916f62fa7815ea89a1904);
+            marker_5972e0fc89a94dd0db3abf44c7bf84da.setIcon(icon_39a2b19b2691020b6b92cde6eb656ca2);
         
     
-        var popup_baab385cf48671874d7b06117ddacd08 = L.popup({"maxWidth": "100%"});
+        var popup_62e17cb8f3254a20defd315440a195a1 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_9b54c3fda2f449a8da4324380b311200 = $(`<div id="html_9b54c3fda2f449a8da4324380b311200" style="width: 100.0%; height: 100.0%;">Supermarket Delikatesy T&J<br>Adress: Karola Olszewskiego 79<br>Distance:  1163 m</div>`)[0];
-                popup_baab385cf48671874d7b06117ddacd08.setContent(html_9b54c3fda2f449a8da4324380b311200);
+                var html_6e10ee5fc111b16edc6528bd0e678739 = $(`<div id="html_6e10ee5fc111b16edc6528bd0e678739" style="width: 100.0%; height: 100.0%;">Supermarket Biedronka<br>Adress: Zygmunta Wróblewskiego 7A<br>Distance:  584 m</div>`)[0];
+                popup_62e17cb8f3254a20defd315440a195a1.setContent(html_6e10ee5fc111b16edc6528bd0e678739);
             
         
 
-        marker_fba67d341288aaa819b9afde45caaa59.bindPopup(popup_baab385cf48671874d7b06117ddacd08)
+        marker_5972e0fc89a94dd0db3abf44c7bf84da.bindPopup(popup_62e17cb8f3254a20defd315440a195a1)
         ;
 
         
     
     
-            var marker_513aaf7a8def609c67cc4b049b8a417e = L.marker(
-                [51.113553, 17.0978066],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_dbe87cd5ee08984073a163d8a0120aee = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
-            );
-            marker_513aaf7a8def609c67cc4b049b8a417e.setIcon(icon_dbe87cd5ee08984073a163d8a0120aee);
-        
-    
-        var popup_26f3f45682c021cd281a67dbfe52f692 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_8a3a92d18c1d6585c41347fd10e95a7e = $(`<div id="html_8a3a92d18c1d6585c41347fd10e95a7e" style="width: 100.0%; height: 100.0%;">Supermarket Rabat<br>Adress: Cypriana Godebskiego 2-4<br>Distance:  925 m</div>`)[0];
-                popup_26f3f45682c021cd281a67dbfe52f692.setContent(html_8a3a92d18c1d6585c41347fd10e95a7e);
-            
-        
-
-        marker_513aaf7a8def609c67cc4b049b8a417e.bindPopup(popup_26f3f45682c021cd281a67dbfe52f692)
-        ;
-
-        
-    
-    
-            var marker_1f0b19ea5df334175ad2c9d5a61ebad9 = L.marker(
-                [51.1013172, 17.1032414],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_c78796dc40b0c707425141460174d135 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_1f0b19ea5df334175ad2c9d5a61ebad9.setIcon(icon_c78796dc40b0c707425141460174d135);
-        
-    
-        var popup_c1b97cbae14fd0ac0b15a24d7b4bb697 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_2f55fdd5229950f149c0b033ee9d403a = $(`<div id="html_2f55fdd5229950f149c0b033ee9d403a" style="width: 100.0%; height: 100.0%;">Restaurant Kasieńka<br>Adress: - -<br>Distance:  1163 m</div>`)[0];
-                popup_c1b97cbae14fd0ac0b15a24d7b4bb697.setContent(html_2f55fdd5229950f149c0b033ee9d403a);
-            
-        
-
-        marker_1f0b19ea5df334175ad2c9d5a61ebad9.bindPopup(popup_c1b97cbae14fd0ac0b15a24d7b4bb697)
-        ;
-
-        
-    
-    
-            var marker_19754fcd47faf486c84cdd2b02473d3b = L.marker(
+            var marker_b50168cf73e4fc1416e1d7c9879ec5dc = L.marker(
                 [51.1067787, 17.0914987],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_72c214cb06b6b6a0bdc1835b0ca4af3e = L.AwesomeMarkers.icon(
+            var icon_0f1e9ab517b79422f5e7475e003aa33a = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_19754fcd47faf486c84cdd2b02473d3b.setIcon(icon_72c214cb06b6b6a0bdc1835b0ca4af3e);
+            marker_b50168cf73e4fc1416e1d7c9879ec5dc.setIcon(icon_0f1e9ab517b79422f5e7475e003aa33a);
         
     
-        var popup_d798cf72ba18e06915bbd8e8d8d23879 = L.popup({"maxWidth": "100%"});
+        var popup_2dcf14a5ad5d1f8dccdd307492f426cd = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_2d0bbfaa417a62b59e076ad923a8e459 = $(`<div id="html_2d0bbfaa417a62b59e076ad923a8e459" style="width: 100.0%; height: 100.0%;">Restaurant La Habana<br>Adress: 8 Maja 86/1B<br>Distance:  283 m</div>`)[0];
-                popup_d798cf72ba18e06915bbd8e8d8d23879.setContent(html_2d0bbfaa417a62b59e076ad923a8e459);
+                var html_3548eecfb81fd30c5890563ed2850adf = $(`<div id="html_3548eecfb81fd30c5890563ed2850adf" style="width: 100.0%; height: 100.0%;">Restaurant La Habana<br>Adress: 8 Maja 86/1B<br>Distance:  382 m</div>`)[0];
+                popup_2dcf14a5ad5d1f8dccdd307492f426cd.setContent(html_3548eecfb81fd30c5890563ed2850adf);
             
         
 
-        marker_19754fcd47faf486c84cdd2b02473d3b.bindPopup(popup_d798cf72ba18e06915bbd8e8d8d23879)
+        marker_b50168cf73e4fc1416e1d7c9879ec5dc.bindPopup(popup_2dcf14a5ad5d1f8dccdd307492f426cd)
         ;
 
         
     
     
-            var marker_1c1cc0de6f791418736a42a1d844c33b = L.marker(
-                [51.10024, 17.0993644],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_352da9cbaf5f0c7ca2f85afad8caece2 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
-            );
-            marker_1c1cc0de6f791418736a42a1d844c33b.setIcon(icon_352da9cbaf5f0c7ca2f85afad8caece2);
-        
-    
-        var popup_732942ecbdd04446743e883880c901f4 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_bd864dbc52048898db0d38b93850f1e8 = $(`<div id="html_bd864dbc52048898db0d38b93850f1e8" style="width: 100.0%; height: 100.0%;">Kindergarten Przedszkole "Zdrój"<br>Adress: - -<br>Distance:  1144 m</div>`)[0];
-                popup_732942ecbdd04446743e883880c901f4.setContent(html_bd864dbc52048898db0d38b93850f1e8);
-            
-        
-
-        marker_1c1cc0de6f791418736a42a1d844c33b.bindPopup(popup_732942ecbdd04446743e883880c901f4)
-        ;
-
-        
-    
-    
-            var marker_75057f30565d7774a90fcfad3b275ab3 = L.marker(
-                [51.1003667, 17.0993969],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_770ce63d3838d4597b1aa8e1215bdf6d = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
-            );
-            marker_75057f30565d7774a90fcfad3b275ab3.setIcon(icon_770ce63d3838d4597b1aa8e1215bdf6d);
-        
-    
-        var popup_0caa50e10e2df5bf3028d9e803674313 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_58f16b1d7528cea6826cbbb661f8eb52 = $(`<div id="html_58f16b1d7528cea6826cbbb661f8eb52" style="width: 100.0%; height: 100.0%;">School Szkoła Podstawowa "Zdrój"<br>Adress: - -<br>Distance:  1144 m</div>`)[0];
-                popup_0caa50e10e2df5bf3028d9e803674313.setContent(html_58f16b1d7528cea6826cbbb661f8eb52);
-            
-        
-
-        marker_75057f30565d7774a90fcfad3b275ab3.bindPopup(popup_0caa50e10e2df5bf3028d9e803674313)
-        ;
-
-        
-    
-    
-            var marker_aa0868c14c0370ca7b90a5754d0d72bb = L.marker(
-                [51.1004934, 17.0994293],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_d8b4b67f25719185278729daff61987e = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
-            );
-            marker_aa0868c14c0370ca7b90a5754d0d72bb.setIcon(icon_d8b4b67f25719185278729daff61987e);
-        
-    
-        var popup_a5a84c215219b47c76dd644794e0a7a0 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_f6d70b5608cb5652f022d656bb402825 = $(`<div id="html_f6d70b5608cb5652f022d656bb402825" style="width: 100.0%; height: 100.0%;">School Szkoła Podstawowa "Iskry"<br>Adress: - -<br>Distance:  1069 m</div>`)[0];
-                popup_a5a84c215219b47c76dd644794e0a7a0.setContent(html_f6d70b5608cb5652f022d656bb402825);
-            
-        
-
-        marker_aa0868c14c0370ca7b90a5754d0d72bb.bindPopup(popup_a5a84c215219b47c76dd644794e0a7a0)
-        ;
-
-        
-    
-    
-            var marker_3b4ccf15382862e8ff0e1a1cc9d52e74 = L.marker(
+            var marker_7818363d791e4dcca4c78eb14d85bdb7 = L.marker(
                 [51.1115137, 17.091959],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_74e29cedd9b9e2a2cef533cc2a88a6e5 = L.AwesomeMarkers.icon(
+            var icon_6536d1f1bece5e28e23a5c2dd1bbd9d3 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
             );
-            marker_3b4ccf15382862e8ff0e1a1cc9d52e74.setIcon(icon_74e29cedd9b9e2a2cef533cc2a88a6e5);
+            marker_7818363d791e4dcca4c78eb14d85bdb7.setIcon(icon_6536d1f1bece5e28e23a5c2dd1bbd9d3);
         
     
-        var popup_99ec187fb76d44970d408b5a8be45682 = L.popup({"maxWidth": "100%"});
+        var popup_1ccceddc2e4048f175f8092290e498e5 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_c5678071ac724da0dc0b7eadea33158b = $(`<div id="html_c5678071ac724da0dc0b7eadea33158b" style="width: 100.0%; height: 100.0%;">Library Miejska Biblioteka Publiczna, filia nr 32<br>Adress: 8 Maja 26<br>Distance:  654 m</div>`)[0];
-                popup_99ec187fb76d44970d408b5a8be45682.setContent(html_c5678071ac724da0dc0b7eadea33158b);
+                var html_a7989405ee95fef91f1cd65780c83ebc = $(`<div id="html_a7989405ee95fef91f1cd65780c83ebc" style="width: 100.0%; height: 100.0%;">Library Miejska Biblioteka Publiczna, filia nr 32<br>Adress: 8 Maja 26<br>Distance:  931 m</div>`)[0];
+                popup_1ccceddc2e4048f175f8092290e498e5.setContent(html_a7989405ee95fef91f1cd65780c83ebc);
             
         
 
-        marker_3b4ccf15382862e8ff0e1a1cc9d52e74.bindPopup(popup_99ec187fb76d44970d408b5a8be45682)
+        marker_7818363d791e4dcca4c78eb14d85bdb7.bindPopup(popup_1ccceddc2e4048f175f8092290e498e5)
         ;
 
         
     
     
-            var marker_b754d2a40e4593fe5a53c7f200e46f5f = L.marker(
+            var marker_96d95330dbd490f0a903093e2c1bd730 = L.marker(
                 [51.1030309, 17.0948887],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_010a29e2fd95cf6211d7e076bb1b55e5 = L.AwesomeMarkers.icon(
+            var icon_9a2d71c81ceb722f427bd5f3e17b5b4e = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
             );
-            marker_b754d2a40e4593fe5a53c7f200e46f5f.setIcon(icon_010a29e2fd95cf6211d7e076bb1b55e5);
+            marker_96d95330dbd490f0a903093e2c1bd730.setIcon(icon_9a2d71c81ceb722f427bd5f3e17b5b4e);
         
     
-        var popup_2fd7cc22ed693c5ff09107ca4d8a800b = L.popup({"maxWidth": "100%"});
+        var popup_045af11a55cc61aed0b36b24f9ee9b11 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_b504e289608cae8bd9e59155e4c45e26 = $(`<div id="html_b504e289608cae8bd9e59155e4c45e26" style="width: 100.0%; height: 100.0%;">Convenience Żabka<br>Adress: - -<br>Distance:  641 m</div>`)[0];
-                popup_2fd7cc22ed693c5ff09107ca4d8a800b.setContent(html_b504e289608cae8bd9e59155e4c45e26);
+                var html_aa6b309c98527dada051a217d01e2525 = $(`<div id="html_aa6b309c98527dada051a217d01e2525" style="width: 100.0%; height: 100.0%;">Convenience Żabka<br>Adress: - -<br>Distance:  899 m</div>`)[0];
+                popup_045af11a55cc61aed0b36b24f9ee9b11.setContent(html_aa6b309c98527dada051a217d01e2525);
             
         
 
-        marker_b754d2a40e4593fe5a53c7f200e46f5f.bindPopup(popup_2fd7cc22ed693c5ff09107ca4d8a800b)
+        marker_96d95330dbd490f0a903093e2c1bd730.bindPopup(popup_045af11a55cc61aed0b36b24f9ee9b11)
         ;
 
         
     
     
-            var marker_f2e2c53e1abadebc7d3f84f3f69b18e6 = L.marker(
-                [51.1024435, 17.1020461],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_a79b21fc69744211c0cbcf89682ae560 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
-            );
-            marker_f2e2c53e1abadebc7d3f84f3f69b18e6.setIcon(icon_a79b21fc69744211c0cbcf89682ae560);
-        
-    
-        var popup_ef3830ffbd8ce1f46c026ef07fc255a8 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_f173ccde36f20be03e06df57a0b540da = $(`<div id="html_f173ccde36f20be03e06df57a0b540da" style="width: 100.0%; height: 100.0%;">Convenience Żabka<br>Adress: Karola Olszewskiego 70/1a<br>Distance:  1011 m</div>`)[0];
-                popup_ef3830ffbd8ce1f46c026ef07fc255a8.setContent(html_f173ccde36f20be03e06df57a0b540da);
-            
-        
-
-        marker_f2e2c53e1abadebc7d3f84f3f69b18e6.bindPopup(popup_ef3830ffbd8ce1f46c026ef07fc255a8)
-        ;
-
-        
-    
-    
-            var marker_6c8c8b6af4fd2ba4f6aaf94f67d6c44a = L.marker(
+            var marker_a7dd4cd1d2834d3741a1bb004cf042df = L.marker(
                 [51.1033672, 17.0959608],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_53dd835ac73e6db48c1e42df49030bfc = L.AwesomeMarkers.icon(
+            var icon_45e02f65b88eda935ad3f91efed89494 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_6c8c8b6af4fd2ba4f6aaf94f67d6c44a.setIcon(icon_53dd835ac73e6db48c1e42df49030bfc);
+            marker_a7dd4cd1d2834d3741a1bb004cf042df.setIcon(icon_45e02f65b88eda935ad3f91efed89494);
         
     
-        var popup_c6888fa553b8b888e6a9c2f5db68f660 = L.popup({"maxWidth": "100%"});
+        var popup_ca229f136560929f079aeab02f6816e7 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_3f4f84f7ea068cac001cd2d66a4e5f5a = $(`<div id="html_3f4f84f7ea068cac001cd2d66a4e5f5a" style="width: 100.0%; height: 100.0%;">Cafe Przystanek P.<br>Adress: - -<br>Distance:  577 m</div>`)[0];
-                popup_c6888fa553b8b888e6a9c2f5db68f660.setContent(html_3f4f84f7ea068cac001cd2d66a4e5f5a);
+                var html_a8ad867491aa0079ba10db5033c75585 = $(`<div id="html_a8ad867491aa0079ba10db5033c75585" style="width: 100.0%; height: 100.0%;">Cafe Przystanek P.<br>Adress: - -<br>Distance:  883 m</div>`)[0];
+                popup_ca229f136560929f079aeab02f6816e7.setContent(html_a8ad867491aa0079ba10db5033c75585);
             
         
 
-        marker_6c8c8b6af4fd2ba4f6aaf94f67d6c44a.bindPopup(popup_c6888fa553b8b888e6a9c2f5db68f660)
+        marker_a7dd4cd1d2834d3741a1bb004cf042df.bindPopup(popup_ca229f136560929f079aeab02f6816e7)
         ;
 
         
     
     
-            var marker_0e3ecf21bbedabd86d3e2643a5c694bd = L.marker(
+            var marker_6e565c23770ac6683cf134bc7b151126 = L.marker(
                 [51.1068872, 17.0929522],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_2796b4ec17ea6a50d600ab02605a9c11 = L.AwesomeMarkers.icon(
+            var icon_7430c36b82c070a2580c1f7e2087d1c0 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_0e3ecf21bbedabd86d3e2643a5c694bd.setIcon(icon_2796b4ec17ea6a50d600ab02605a9c11);
+            marker_6e565c23770ac6683cf134bc7b151126.setIcon(icon_7430c36b82c070a2580c1f7e2087d1c0);
         
     
-        var popup_c1ebbdaeff1658b8a801969ecc7fbb9c = L.popup({"maxWidth": "100%"});
+        var popup_a5a8bfbfb4e451d65b33c78ca525c952 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_5f599155863ca387fab7bab8991ef3c5 = $(`<div id="html_5f599155863ca387fab7bab8991ef3c5" style="width: 100.0%; height: 100.0%;">Pub Browar Wielka Wyspa<br>Adress: Partyzantów 1<br>Distance:  191 m</div>`)[0];
-                popup_c1ebbdaeff1658b8a801969ecc7fbb9c.setContent(html_5f599155863ca387fab7bab8991ef3c5);
+                var html_b0c8925c6d7dd0b5693f5031d270a014 = $(`<div id="html_b0c8925c6d7dd0b5693f5031d270a014" style="width: 100.0%; height: 100.0%;">Pub Browar Wielka Wyspa<br>Adress: Partyzantów 1<br>Distance:  447 m</div>`)[0];
+                popup_a5a8bfbfb4e451d65b33c78ca525c952.setContent(html_b0c8925c6d7dd0b5693f5031d270a014);
             
         
 
-        marker_0e3ecf21bbedabd86d3e2643a5c694bd.bindPopup(popup_c1ebbdaeff1658b8a801969ecc7fbb9c)
+        marker_6e565c23770ac6683cf134bc7b151126.bindPopup(popup_a5a8bfbfb4e451d65b33c78ca525c952)
         ;
 
         
     
     
-            var marker_39a71f61fdcd045a9f3fccca790198b4 = L.marker(
+            var marker_f98c5c9f3ac558fec3d557eecfecef17 = L.marker(
                 [51.1044923, 17.0841579],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_c54ae3946e55fa28fe59b430f25df74c = L.AwesomeMarkers.icon(
+            var icon_e5e55e5efa4e47d88cff27486f56625a = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_39a71f61fdcd045a9f3fccca790198b4.setIcon(icon_c54ae3946e55fa28fe59b430f25df74c);
+            marker_f98c5c9f3ac558fec3d557eecfecef17.setIcon(icon_e5e55e5efa4e47d88cff27486f56625a);
         
     
-        var popup_4eb5a788ed10d57f06c2c393ab967334 = L.popup({"maxWidth": "100%"});
+        var popup_12d65bf79e48be149380471967175b6e = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_92037364994bf8e8a458ff3c13ca5ee7 = $(`<div id="html_92037364994bf8e8a458ff3c13ca5ee7" style="width: 100.0%; height: 100.0%;">Cafe Wuwa Café<br>Adress: Tramwajowa 2<br>Distance:  954 m</div>`)[0];
-                popup_4eb5a788ed10d57f06c2c393ab967334.setContent(html_92037364994bf8e8a458ff3c13ca5ee7);
+                var html_40637c4546d9271a7a7eb9401341d830 = $(`<div id="html_40637c4546d9271a7a7eb9401341d830" style="width: 100.0%; height: 100.0%;">Cafe Wuwa Café<br>Adress: Tramwajowa 2<br>Distance:  320 m</div>`)[0];
+                popup_12d65bf79e48be149380471967175b6e.setContent(html_40637c4546d9271a7a7eb9401341d830);
             
         
 
-        marker_39a71f61fdcd045a9f3fccca790198b4.bindPopup(popup_4eb5a788ed10d57f06c2c393ab967334)
+        marker_f98c5c9f3ac558fec3d557eecfecef17.bindPopup(popup_12d65bf79e48be149380471967175b6e)
         ;
 
         
     
     
-            var marker_cf865026e8a3e5d049cbe25933d0c34e = L.marker(
+            var marker_e554bd5fb25963d526109fb365344a47 = L.marker(
                 [51.1040819, 17.0812964],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_71ac758da1197ebb0d44980d01e6877e = L.AwesomeMarkers.icon(
+            var icon_bc9eb9345307e336ee92bb2a562b37d7 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_cf865026e8a3e5d049cbe25933d0c34e.setIcon(icon_71ac758da1197ebb0d44980d01e6877e);
+            marker_e554bd5fb25963d526109fb365344a47.setIcon(icon_bc9eb9345307e336ee92bb2a562b37d7);
         
     
-        var popup_1af5b81b8a3b2f948c1b76adba635957 = L.popup({"maxWidth": "100%"});
+        var popup_7a87e06b8f32ecba81e4d90ca12ae41f = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_fbb8581cfad2f285f99f90cc0cf3986e = $(`<div id="html_fbb8581cfad2f285f99f90cc0cf3986e" style="width: 100.0%; height: 100.0%;">Cafe Petits Fours Café<br>Adress: Zygmunta Wróblewskiego 7<br>Distance:  1168 m</div>`)[0];
-                popup_1af5b81b8a3b2f948c1b76adba635957.setContent(html_fbb8581cfad2f285f99f90cc0cf3986e);
+                var html_e8f6c33939fd4cad605872089c14503f = $(`<div id="html_e8f6c33939fd4cad605872089c14503f" style="width: 100.0%; height: 100.0%;">Cafe Petits Fours Café<br>Adress: Zygmunta Wróblewskiego 7<br>Distance:  543 m</div>`)[0];
+                popup_7a87e06b8f32ecba81e4d90ca12ae41f.setContent(html_e8f6c33939fd4cad605872089c14503f);
             
         
 
-        marker_cf865026e8a3e5d049cbe25933d0c34e.bindPopup(popup_1af5b81b8a3b2f948c1b76adba635957)
+        marker_e554bd5fb25963d526109fb365344a47.bindPopup(popup_7a87e06b8f32ecba81e4d90ca12ae41f)
         ;
 
         
     
     
-            var marker_956cd76e5dd240df6351bf8c0b91ff4b = L.marker(
+            var marker_c39907b666487323c923047e7452d25b = L.marker(
                 [51.1040596, 17.0814904],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_aa3dbd88747de948b3ed384a2922dae6 = L.AwesomeMarkers.icon(
+            var icon_ce0a4d7ea9651dd3783033a30b327adf = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_956cd76e5dd240df6351bf8c0b91ff4b.setIcon(icon_aa3dbd88747de948b3ed384a2922dae6);
+            marker_c39907b666487323c923047e7452d25b.setIcon(icon_ce0a4d7ea9651dd3783033a30b327adf);
         
     
-        var popup_4c065d9ae96e9fc1a21299505115c4f3 = L.popup({"maxWidth": "100%"});
+        var popup_3c996b15bf514b87e21104a4f5f1a025 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_4cc5d8368f8dbbb9fff0e067683ad7f6 = $(`<div id="html_4cc5d8368f8dbbb9fff0e067683ad7f6" style="width: 100.0%; height: 100.0%;">Restaurant Jungle<br>Adress: Zygmunta Wróblewskiego 7<br>Distance:  1197 m</div>`)[0];
-                popup_4c065d9ae96e9fc1a21299505115c4f3.setContent(html_4cc5d8368f8dbbb9fff0e067683ad7f6);
+                var html_2004c9d1f27b0c307ff4f42ecd8fe0b9 = $(`<div id="html_2004c9d1f27b0c307ff4f42ecd8fe0b9" style="width: 100.0%; height: 100.0%;">Restaurant Jungle<br>Adress: Zygmunta Wróblewskiego 7<br>Distance:  571 m</div>`)[0];
+                popup_3c996b15bf514b87e21104a4f5f1a025.setContent(html_2004c9d1f27b0c307ff4f42ecd8fe0b9);
             
         
 
-        marker_956cd76e5dd240df6351bf8c0b91ff4b.bindPopup(popup_4c065d9ae96e9fc1a21299505115c4f3)
+        marker_c39907b666487323c923047e7452d25b.bindPopup(popup_3c996b15bf514b87e21104a4f5f1a025)
         ;
 
         
     
     
-            var marker_e0cf12ccbd92d2e35d43610cfde6ce75 = L.marker(
+            var marker_c94201c7071f925e7c34ebabf52e6043 = L.marker(
                 [51.1066789, 17.0928415],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_8354a47761d251771180ca29881ecc39 = L.AwesomeMarkers.icon(
+            var icon_be6ba967f2f6362734f0e57f10214047 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_e0cf12ccbd92d2e35d43610cfde6ce75.setIcon(icon_8354a47761d251771180ca29881ecc39);
+            marker_c94201c7071f925e7c34ebabf52e6043.setIcon(icon_be6ba967f2f6362734f0e57f10214047);
         
     
-        var popup_cae21bf0c05617fb5fcef32e6ea2feca = L.popup({"maxWidth": "100%"});
+        var popup_b9fea074446bfd25f2598c9cdd9400cc = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_021da9ee6486a5b51a9f72a63d93d099 = $(`<div id="html_021da9ee6486a5b51a9f72a63d93d099" style="width: 100.0%; height: 100.0%;">Restaurant Koi Sushi Bar<br>Adress: Edwarda Dembowskiego 18/2a<br>Distance:  191 m</div>`)[0];
-                popup_cae21bf0c05617fb5fcef32e6ea2feca.setContent(html_021da9ee6486a5b51a9f72a63d93d099);
+                var html_206964ab89daebec5de66f6d77ec67a8 = $(`<div id="html_206964ab89daebec5de66f6d77ec67a8" style="width: 100.0%; height: 100.0%;">Restaurant Koi Sushi Bar<br>Adress: Edwarda Dembowskiego 18/2a<br>Distance:  447 m</div>`)[0];
+                popup_b9fea074446bfd25f2598c9cdd9400cc.setContent(html_206964ab89daebec5de66f6d77ec67a8);
             
         
 
-        marker_e0cf12ccbd92d2e35d43610cfde6ce75.bindPopup(popup_cae21bf0c05617fb5fcef32e6ea2feca)
+        marker_c94201c7071f925e7c34ebabf52e6043.bindPopup(popup_b9fea074446bfd25f2598c9cdd9400cc)
         ;
 
         
     
     
-            var marker_730377f1c21ae24c99cdd012e5ce7405 = L.marker(
-                [51.1061598, 17.1064462],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_6234e40641d29a960556a8ea47e4ea0d = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
-            );
-            marker_730377f1c21ae24c99cdd012e5ce7405.setIcon(icon_6234e40641d29a960556a8ea47e4ea0d);
-        
-    
-        var popup_0f19ae36d96ebeccf05e4ab13b4f90c7 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_ca4e06bdd65cee22a07419bf7e7401e0 = $(`<div id="html_ca4e06bdd65cee22a07419bf7e7401e0" style="width: 100.0%; height: 100.0%;">School Liceum Ogólnokształcące nr XI<br>Adress: Spółdzielcza 2a<br>Distance:  959 m</div>`)[0];
-                popup_0f19ae36d96ebeccf05e4ab13b4f90c7.setContent(html_ca4e06bdd65cee22a07419bf7e7401e0);
-            
-        
-
-        marker_730377f1c21ae24c99cdd012e5ce7405.bindPopup(popup_0f19ae36d96ebeccf05e4ab13b4f90c7)
-        ;
-
-        
-    
-    
-            var marker_58b2b80821b3a08d9ccec1f0ae6be03f = L.marker(
+            var marker_81b418f0dc2c2de14acc8cfb64dab5c3 = L.marker(
                 [51.1085902, 17.0942087],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_146bcf297d9bc6e0c93f67794d55f6c5 = L.AwesomeMarkers.icon(
+            var icon_a5c2c18ebd711c1d7f14540c1938650a = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
             );
-            marker_58b2b80821b3a08d9ccec1f0ae6be03f.setIcon(icon_146bcf297d9bc6e0c93f67794d55f6c5);
+            marker_81b418f0dc2c2de14acc8cfb64dab5c3.setIcon(icon_a5c2c18ebd711c1d7f14540c1938650a);
         
     
-        var popup_125afa164c0b44c6a14df32d0d5d2944 = L.popup({"maxWidth": "100%"});
+        var popup_5fb6644d251afd3f3f0c9129eefbb36f = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_7509cb6d4c485d0daff6c10f326a27cb = $(`<div id="html_7509cb6d4c485d0daff6c10f326a27cb" style="width: 100.0%; height: 100.0%;">Convenience T&J<br>Adress: Walerego Sławka 11<br>Distance:  194 m</div>`)[0];
-                popup_125afa164c0b44c6a14df32d0d5d2944.setContent(html_7509cb6d4c485d0daff6c10f326a27cb);
+                var html_26b2b0abb76d1b5d485786a3e8f51c45 = $(`<div id="html_26b2b0abb76d1b5d485786a3e8f51c45" style="width: 100.0%; height: 100.0%;">Convenience T&J<br>Adress: Walerego Sławka 11<br>Distance:  701 m</div>`)[0];
+                popup_5fb6644d251afd3f3f0c9129eefbb36f.setContent(html_26b2b0abb76d1b5d485786a3e8f51c45);
             
         
 
-        marker_58b2b80821b3a08d9ccec1f0ae6be03f.bindPopup(popup_125afa164c0b44c6a14df32d0d5d2944)
+        marker_81b418f0dc2c2de14acc8cfb64dab5c3.bindPopup(popup_5fb6644d251afd3f3f0c9129eefbb36f)
         ;
 
         
     
     
-            var marker_7ff8faee05a45f8499de5ff692c14e4d = L.marker(
-                [51.1112541, 17.1011322],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_16b544ed95348097e99737dec9541ce0 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_7ff8faee05a45f8499de5ff692c14e4d.setIcon(icon_16b544ed95348097e99737dec9541ce0);
-        
-    
-        var popup_ce1e003225f4b36b117addb3521ea9b9 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_4545f79069a139f19dffd51ac655cbaa = $(`<div id="html_4545f79069a139f19dffd51ac655cbaa" style="width: 100.0%; height: 100.0%;">Restaurant Pizzeria Mamma Mia Sępolno<br>Adress: Jana Szanieckiego 68<br>Distance:  779 m</div>`)[0];
-                popup_ce1e003225f4b36b117addb3521ea9b9.setContent(html_4545f79069a139f19dffd51ac655cbaa);
-            
-        
-
-        marker_7ff8faee05a45f8499de5ff692c14e4d.bindPopup(popup_ce1e003225f4b36b117addb3521ea9b9)
-        ;
-
-        
-    
-    
-            var marker_434abb5813929bd3b29f8bae3cb65400 = L.marker(
+            var marker_82bf897ef66d57b2b531a9549efcd115 = L.marker(
                 [51.1096722, 17.1007041],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_5cc06276f4c4c97cb0719278300fa60b = L.AwesomeMarkers.icon(
+            var icon_ebf5cc01ddc4e0930ef3659e3930de3d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
             );
-            marker_434abb5813929bd3b29f8bae3cb65400.setIcon(icon_5cc06276f4c4c97cb0719278300fa60b);
+            marker_82bf897ef66d57b2b531a9549efcd115.setIcon(icon_ebf5cc01ddc4e0930ef3659e3930de3d);
         
     
-        var popup_cfd3f69fa9f06d4bd5559588d47c2e11 = L.popup({"maxWidth": "100%"});
+        var popup_aafeac51065b2a20f606ef0a732e17e9 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_18fa52c1b93fb9032c7fee89621644b7 = $(`<div id="html_18fa52c1b93fb9032c7fee89621644b7" style="width: 100.0%; height: 100.0%;">Convenience Delikatesy Gregor<br>Adress: Partyzantów 41<br>Distance:  625 m</div>`)[0];
-                popup_cfd3f69fa9f06d4bd5559588d47c2e11.setContent(html_18fa52c1b93fb9032c7fee89621644b7);
+                var html_f345fdf7fb55321461702a1d9c51389e = $(`<div id="html_f345fdf7fb55321461702a1d9c51389e" style="width: 100.0%; height: 100.0%;">Convenience Delikatesy Gregor<br>Adress: Partyzantów 41<br>Distance:  1157 m</div>`)[0];
+                popup_aafeac51065b2a20f606ef0a732e17e9.setContent(html_f345fdf7fb55321461702a1d9c51389e);
             
         
 
-        marker_434abb5813929bd3b29f8bae3cb65400.bindPopup(popup_cfd3f69fa9f06d4bd5559588d47c2e11)
+        marker_82bf897ef66d57b2b531a9549efcd115.bindPopup(popup_aafeac51065b2a20f606ef0a732e17e9)
         ;
 
         
     
     
-            var marker_66895bd231ab82c3f71caccb5929b5f0 = L.marker(
-                [51.1134279, 17.0977671],
+            var marker_6e86eafe39f856af8573882f73cecfe5 = L.marker(
+                [51.1067734, 17.0928321],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_5f94b07ad9c0721f703c0a45fcf427b5 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            var icon_2b9d1a5615d1c8717064737a17f13ea2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_66895bd231ab82c3f71caccb5929b5f0.setIcon(icon_5f94b07ad9c0721f703c0a45fcf427b5);
+            marker_6e86eafe39f856af8573882f73cecfe5.setIcon(icon_2b9d1a5615d1c8717064737a17f13ea2);
         
     
-        var popup_3a52a0dea419c5fcfc73270c1a033b14 = L.popup({"maxWidth": "100%"});
+        var popup_2fdf6d649e2d76de11daa9d4ad4e3fdd = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_ebd685fb9225ab3351bc2fc8e6b14025 = $(`<div id="html_ebd685fb9225ab3351bc2fc8e6b14025" style="width: 100.0%; height: 100.0%;">Dentist Tulident<br>Adress: Cypriana Godebskiego 2<br>Distance:  889 m</div>`)[0];
-                popup_3a52a0dea419c5fcfc73270c1a033b14.setContent(html_ebd685fb9225ab3351bc2fc8e6b14025);
+                var html_66988f66ccfee8baf6bb9973df19c30a = $(`<div id="html_66988f66ccfee8baf6bb9973df19c30a" style="width: 100.0%; height: 100.0%;">Cafe Giaga Caffè<br>Adress: Edwarda Dembowskiego 18/1A<br>Distance:  447 m</div>`)[0];
+                popup_2fdf6d649e2d76de11daa9d4ad4e3fdd.setContent(html_66988f66ccfee8baf6bb9973df19c30a);
             
         
 
-        marker_66895bd231ab82c3f71caccb5929b5f0.bindPopup(popup_3a52a0dea419c5fcfc73270c1a033b14)
+        marker_6e86eafe39f856af8573882f73cecfe5.bindPopup(popup_2fdf6d649e2d76de11daa9d4ad4e3fdd)
         ;
 
         
     
     
-            var marker_cbca2c7311f0122e34438e2e08b944a0 = L.marker(
+            var marker_65d3ceac06676a96bf15a0cf0719d83a = L.marker(
                 [51.1064366, 17.0928548],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_4f8d40eaebb430f56c20ea1d8688bd3e = L.AwesomeMarkers.icon(
+            var icon_ab1beb13984bd63478760f3ad0dbd9b2 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_cbca2c7311f0122e34438e2e08b944a0.setIcon(icon_4f8d40eaebb430f56c20ea1d8688bd3e);
+            marker_65d3ceac06676a96bf15a0cf0719d83a.setIcon(icon_ab1beb13984bd63478760f3ad0dbd9b2);
         
     
-        var popup_a5f2fa90e3ad0994f35becfb47cc36b1 = L.popup({"maxWidth": "100%"});
+        var popup_b506c512bcd573905db30f3a36138884 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_da904baec82ea14088cc205a9cba148a = $(`<div id="html_da904baec82ea14088cc205a9cba148a" style="width: 100.0%; height: 100.0%;">Dentist Badent<br>Adress: Edwarda Dembowskiego 22/1a<br>Distance:  228 m</div>`)[0];
-                popup_a5f2fa90e3ad0994f35becfb47cc36b1.setContent(html_da904baec82ea14088cc205a9cba148a);
+                var html_c40c58cfd2d0836867a02b53b700f134 = $(`<div id="html_c40c58cfd2d0836867a02b53b700f134" style="width: 100.0%; height: 100.0%;">Dentist Badent<br>Adress: Edwarda Dembowskiego 22/1a<br>Distance:  437 m</div>`)[0];
+                popup_b506c512bcd573905db30f3a36138884.setContent(html_c40c58cfd2d0836867a02b53b700f134);
             
         
 
-        marker_cbca2c7311f0122e34438e2e08b944a0.bindPopup(popup_a5f2fa90e3ad0994f35becfb47cc36b1)
+        marker_65d3ceac06676a96bf15a0cf0719d83a.bindPopup(popup_b506c512bcd573905db30f3a36138884)
         ;
 
         
     
     
-            var marker_e085e48c0b2569f420baa14ee23cb8bb = L.marker(
-                [51.109872, 17.1048097],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_e3b2e4c294126ab41643486f2152e515 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
-            );
-            marker_e085e48c0b2569f420baa14ee23cb8bb.setIcon(icon_e3b2e4c294126ab41643486f2152e515);
-        
-    
-        var popup_f874910a1e1b5c68cd0e5233fb7fad49 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_25b40a66872e4793f34f34b15f554ebc = $(`<div id="html_25b40a66872e4793f34f34b15f554ebc" style="width: 100.0%; height: 100.0%;">Doctors Praktyka Lekarza Rodzinnego Ewa Stocka - Błażejewska<br>Adress: Partyzantów 72<br>Distance:  821 m</div>`)[0];
-                popup_f874910a1e1b5c68cd0e5233fb7fad49.setContent(html_25b40a66872e4793f34f34b15f554ebc);
-            
-        
-
-        marker_e085e48c0b2569f420baa14ee23cb8bb.bindPopup(popup_f874910a1e1b5c68cd0e5233fb7fad49)
-        ;
-
-        
-    
-    
-            var marker_a45e3921308f4be1a5db4364fd9f223a = L.marker(
-                [51.1009853, 17.0996233],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_5b596be95554d7b7c5ae0598910cc403 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
-            );
-            marker_a45e3921308f4be1a5db4364fd9f223a.setIcon(icon_5b596be95554d7b7c5ae0598910cc403);
-        
-    
-        var popup_ef64fdfb09a6bc31121c6ea16de64dc6 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_617892de471c6ae1c57735a2ded90a01 = $(`<div id="html_617892de471c6ae1c57735a2ded90a01" style="width: 100.0%; height: 100.0%;">Doctors -<br>Adress: - -<br>Distance:  1040 m</div>`)[0];
-                popup_ef64fdfb09a6bc31121c6ea16de64dc6.setContent(html_617892de471c6ae1c57735a2ded90a01);
-            
-        
-
-        marker_a45e3921308f4be1a5db4364fd9f223a.bindPopup(popup_ef64fdfb09a6bc31121c6ea16de64dc6)
-        ;
-
-        
-    
-    
-            var marker_c25deae4c43423ffe8df8f3a32589e2d = L.marker(
-                [51.1014753, 17.0977368],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_ddf4054970a0cf8ac8a09caebf4dd299 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
-            );
-            marker_c25deae4c43423ffe8df8f3a32589e2d.setIcon(icon_ddf4054970a0cf8ac8a09caebf4dd299);
-        
-    
-        var popup_821d2ccaf715dc15317d2a0e3fc0fda1 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_3276f96234f9c486b09d48f3f19e1b1d = $(`<div id="html_3276f96234f9c486b09d48f3f19e1b1d" style="width: 100.0%; height: 100.0%;">Convenience Litta<br>Adress: - -<br>Distance:  904 m</div>`)[0];
-                popup_821d2ccaf715dc15317d2a0e3fc0fda1.setContent(html_3276f96234f9c486b09d48f3f19e1b1d);
-            
-        
-
-        marker_c25deae4c43423ffe8df8f3a32589e2d.bindPopup(popup_821d2ccaf715dc15317d2a0e3fc0fda1)
-        ;
-
-        
-    
-    
-            var marker_1bd26694c1bc49de0386f5a197225ffd = L.marker(
-                [51.1135576, 17.0972493],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_21aa9702ef7445792fc5917cef766b60 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
-            );
-            marker_1bd26694c1bc49de0386f5a197225ffd.setIcon(icon_21aa9702ef7445792fc5917cef766b60);
-        
-    
-        var popup_da4c1bf54d098af118725a5044ace3ef = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_084529139d2fdb0d4dc3bac42566cccf = $(`<div id="html_084529139d2fdb0d4dc3bac42566cccf" style="width: 100.0%; height: 100.0%;">Convenience Żabka<br>Adress: - -<br>Distance:  890 m</div>`)[0];
-                popup_da4c1bf54d098af118725a5044ace3ef.setContent(html_084529139d2fdb0d4dc3bac42566cccf);
-            
-        
-
-        marker_1bd26694c1bc49de0386f5a197225ffd.bindPopup(popup_da4c1bf54d098af118725a5044ace3ef)
-        ;
-
-        
-    
-    
-            var marker_f263a3d656ef504bfd0db5795243552b = L.marker(
+            var marker_6c2be557fbee5cedce9a3e0c07d965a0 = L.marker(
                 [51.1015654, 17.0974788],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_4dd04a842bda378076f2819eafeddab6 = L.AwesomeMarkers.icon(
+            var icon_ede148ddd261564fdc78030b429cfa0d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_f263a3d656ef504bfd0db5795243552b.setIcon(icon_4dd04a842bda378076f2819eafeddab6);
+            marker_6c2be557fbee5cedce9a3e0c07d965a0.setIcon(icon_ede148ddd261564fdc78030b429cfa0d);
         
     
-        var popup_911a96de80a3ce3e7978001307b24307 = L.popup({"maxWidth": "100%"});
+        var popup_c82151b9bed0909a8a2c3fc5e85a2838 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_cc98daa37d1324ff8bbe297422b4639b = $(`<div id="html_cc98daa37d1324ff8bbe297422b4639b" style="width: 100.0%; height: 100.0%;">Pharmacy Pro Homine<br>Adress: Karola Olszewskiego 23<br>Distance:  851 m</div>`)[0];
-                popup_911a96de80a3ce3e7978001307b24307.setContent(html_cc98daa37d1324ff8bbe297422b4639b);
+                var html_e5fcf9250f9707c435bca5fc2e5f3776 = $(`<div id="html_e5fcf9250f9707c435bca5fc2e5f3776" style="width: 100.0%; height: 100.0%;">Pharmacy Pro Homine<br>Adress: Karola Olszewskiego 23<br>Distance:  1157 m</div>`)[0];
+                popup_c82151b9bed0909a8a2c3fc5e85a2838.setContent(html_e5fcf9250f9707c435bca5fc2e5f3776);
             
         
 
-        marker_f263a3d656ef504bfd0db5795243552b.bindPopup(popup_911a96de80a3ce3e7978001307b24307)
+        marker_6c2be557fbee5cedce9a3e0c07d965a0.bindPopup(popup_c82151b9bed0909a8a2c3fc5e85a2838)
         ;
 
         
     
     
-            var marker_ec7221a32a2deda99f1c1414104ca2c3 = L.marker(
+            var marker_f8d7d9cc5b96822098b21f58fcabee99 = L.marker(
                 [51.1027683, 17.0968541],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_cfc5a737bb83e3bfbaab5eb24bfb6828 = L.AwesomeMarkers.icon(
+            var icon_be68014916dba026bcf91271b2d37091 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_ec7221a32a2deda99f1c1414104ca2c3.setIcon(icon_cfc5a737bb83e3bfbaab5eb24bfb6828);
+            marker_f8d7d9cc5b96822098b21f58fcabee99.setIcon(icon_be68014916dba026bcf91271b2d37091);
         
     
-        var popup_2403eddfcf19834ebc89dfec8ea74bd5 = L.popup({"maxWidth": "100%"});
+        var popup_cc5ab18f169b85257d53bc61cd61b05c = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_a9f2e6d2529a1b229de447b9bb194dce = $(`<div id="html_a9f2e6d2529a1b229de447b9bb194dce" style="width: 100.0%; height: 100.0%;">Pharmacy Apteka w Przychodni na Biskupinie<br>Adress: - -<br>Distance:  695 m</div>`)[0];
-                popup_2403eddfcf19834ebc89dfec8ea74bd5.setContent(html_a9f2e6d2529a1b229de447b9bb194dce);
+                var html_4edc66daf3b874b23c5f9fbdbfb58863 = $(`<div id="html_4edc66daf3b874b23c5f9fbdbfb58863" style="width: 100.0%; height: 100.0%;">Pharmacy Apteka w Przychodni na Biskupinie<br>Adress: - -<br>Distance:  982 m</div>`)[0];
+                popup_cc5ab18f169b85257d53bc61cd61b05c.setContent(html_4edc66daf3b874b23c5f9fbdbfb58863);
             
         
 
-        marker_ec7221a32a2deda99f1c1414104ca2c3.bindPopup(popup_2403eddfcf19834ebc89dfec8ea74bd5)
+        marker_f8d7d9cc5b96822098b21f58fcabee99.bindPopup(popup_cc5ab18f169b85257d53bc61cd61b05c)
         ;
 
         
     
     
-            var marker_bb2975d4bebd44b716a9ed802d18201c = L.marker(
-                [51.1020835, 17.1014567],
+            var marker_e425ef6f6a4d896d72b766e84c2613c8 = L.marker(
+                [51.108157, 17.094051],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_8435ba19f395237f09b9c9f457c44bf8 = L.AwesomeMarkers.icon(
+            var icon_f65dc6c433f30a3b0536a2b62669ce0d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_bb2975d4bebd44b716a9ed802d18201c.setIcon(icon_8435ba19f395237f09b9c9f457c44bf8);
+            marker_e425ef6f6a4d896d72b766e84c2613c8.setIcon(icon_f65dc6c433f30a3b0536a2b62669ce0d);
         
     
-        var popup_c62eb71359b88d34e1f101ee0866f25c = L.popup({"maxWidth": "100%"});
+        var popup_ce007bc43e75b844a7c700d4601862ff = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_1ed8596692fcf24665ac9ff2a2bc5a9a = $(`<div id="html_1ed8596692fcf24665ac9ff2a2bc5a9a" style="width: 100.0%; height: 100.0%;">Cafe Kawiarnia Kapelusz<br>Adress: Karola Olszewskiego 67<br>Distance:  1032 m</div>`)[0];
-                popup_c62eb71359b88d34e1f101ee0866f25c.setContent(html_1ed8596692fcf24665ac9ff2a2bc5a9a);
+                var html_a87c36b20ace7306ab234958a689936a = $(`<div id="html_a87c36b20ace7306ab234958a689936a" style="width: 100.0%; height: 100.0%;">Fast_food Czarna Cebula<br>Adress: - -<br>Distance:  632 m</div>`)[0];
+                popup_ce007bc43e75b844a7c700d4601862ff.setContent(html_a87c36b20ace7306ab234958a689936a);
             
         
 
-        marker_bb2975d4bebd44b716a9ed802d18201c.bindPopup(popup_c62eb71359b88d34e1f101ee0866f25c)
+        marker_e425ef6f6a4d896d72b766e84c2613c8.bindPopup(popup_ce007bc43e75b844a7c700d4601862ff)
         ;
 
         
     
     
-            var marker_d03b58651ea49b7c2d1814cb92142435 = L.marker(
-                [51.10579711900567, 17.10682478417559],
+            var marker_1dc94376516f7e15794659212cd930ac = L.marker(
+                [51.1030605, 17.0846969],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_aed336fbdcfb862d4cc611cebe1f107a = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            var icon_a8bb7d390e464f00619384fa429f22bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_d03b58651ea49b7c2d1814cb92142435.setIcon(icon_aed336fbdcfb862d4cc611cebe1f107a);
+            marker_1dc94376516f7e15794659212cd930ac.setIcon(icon_a8bb7d390e464f00619384fa429f22bd);
         
     
-        var popup_47bc9025d8984ae5f7c1cdc5baf44ce9 = L.popup({"maxWidth": "100%"});
+        var popup_5733dc7e97d1c4b719cef0907969405c = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_db5642438275413da2bc34da293ba8b7 = $(`<div id="html_db5642438275413da2bc34da293ba8b7" style="width: 100.0%; height: 100.0%;">School Liceum Ogólnokształcące nr XI<br>Adress: - -<br>Distance:  1090 m</div>`)[0];
-                popup_47bc9025d8984ae5f7c1cdc5baf44ce9.setContent(html_db5642438275413da2bc34da293ba8b7);
+                var html_b1fc018167621c42770745302e7f418c = $(`<div id="html_b1fc018167621c42770745302e7f418c" style="width: 100.0%; height: 100.0%;">Fast_food Antalia Kebab<br>Adress: - -<br>Distance:  483 m</div>`)[0];
+                popup_5733dc7e97d1c4b719cef0907969405c.setContent(html_b1fc018167621c42770745302e7f418c);
             
         
 
-        marker_d03b58651ea49b7c2d1814cb92142435.bindPopup(popup_47bc9025d8984ae5f7c1cdc5baf44ce9)
+        marker_1dc94376516f7e15794659212cd930ac.bindPopup(popup_5733dc7e97d1c4b719cef0907969405c)
         ;
 
         
     
     
-            var marker_60989f4ec16a3d91eaf6ea403a7fb307 = L.marker(
+            var marker_d0891b48876546dcc1873e7743248315 = L.marker(
                 [51.10201900031304, 17.084465469958023],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_dc34e3565d6b82fb7829ef9634aba30f = L.AwesomeMarkers.icon(
+            var icon_a3ed2e7343b47c04c525e45c2399332e = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
             );
-            marker_60989f4ec16a3d91eaf6ea403a7fb307.setIcon(icon_dc34e3565d6b82fb7829ef9634aba30f);
+            marker_d0891b48876546dcc1873e7743248315.setIcon(icon_a3ed2e7343b47c04c525e45c2399332e);
         
     
-        var popup_d4e25ff531dbed6c543f0c5f7dbef343 = L.popup({"maxWidth": "100%"});
+        var popup_3b298a5efe63757d41117cad8966dee6 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_60d003214be494d111fbd9235b7a3e8e = $(`<div id="html_60d003214be494d111fbd9235b7a3e8e" style="width: 100.0%; height: 100.0%;">Supermarket Hewea<br>Adress: - -<br>Distance:  1119 m</div>`)[0];
-                popup_d4e25ff531dbed6c543f0c5f7dbef343.setContent(html_60d003214be494d111fbd9235b7a3e8e);
+                var html_92f35b825211653efe42a25f3e0880c8 = $(`<div id="html_92f35b825211653efe42a25f3e0880c8" style="width: 100.0%; height: 100.0%;">Supermarket Hewea<br>Adress: - -<br>Distance:  626 m</div>`)[0];
+                popup_3b298a5efe63757d41117cad8966dee6.setContent(html_92f35b825211653efe42a25f3e0880c8);
             
         
 
-        marker_60989f4ec16a3d91eaf6ea403a7fb307.bindPopup(popup_d4e25ff531dbed6c543f0c5f7dbef343)
+        marker_d0891b48876546dcc1873e7743248315.bindPopup(popup_3b298a5efe63757d41117cad8966dee6)
         ;
 
         
     
     
-            var marker_1c4f88c04e38ee427f563552fc06634a = L.marker(
+            var marker_93dab3a0f98f13157fce62c788294005 = L.marker(
                 [51.10971185362529, 17.101079628200242],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_6e6f20b481d7a7ab1e23f24bbd963d0b = L.AwesomeMarkers.icon(
+            var icon_8261392911ac28c2f1a30135dd16c665 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
             );
-            marker_1c4f88c04e38ee427f563552fc06634a.setIcon(icon_6e6f20b481d7a7ab1e23f24bbd963d0b);
+            marker_93dab3a0f98f13157fce62c788294005.setIcon(icon_8261392911ac28c2f1a30135dd16c665);
         
     
-        var popup_cf7eb7939a30208aea3443f41dd41309 = L.popup({"maxWidth": "100%"});
+        var popup_acefa8366782ca349a1de02510112661 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_19519ff685433dde100f1fc985a3efbf = $(`<div id="html_19519ff685433dde100f1fc985a3efbf" style="width: 100.0%; height: 100.0%;">Convenience Wojtek<br>Adress: Partyzantów 43<br>Distance:  642 m</div>`)[0];
-                popup_cf7eb7939a30208aea3443f41dd41309.setContent(html_19519ff685433dde100f1fc985a3efbf);
+                var html_a12a9b5164ae1a8967094610927539ee = $(`<div id="html_a12a9b5164ae1a8967094610927539ee" style="width: 100.0%; height: 100.0%;">Convenience Wojtek<br>Adress: Partyzantów 43<br>Distance:  1173 m</div>`)[0];
+                popup_acefa8366782ca349a1de02510112661.setContent(html_a12a9b5164ae1a8967094610927539ee);
             
         
 
-        marker_1c4f88c04e38ee427f563552fc06634a.bindPopup(popup_cf7eb7939a30208aea3443f41dd41309)
+        marker_93dab3a0f98f13157fce62c788294005.bindPopup(popup_acefa8366782ca349a1de02510112661)
         ;
 
         
     
     
-            var marker_06f10b3c892f4487791094ee9645e6f4 = L.marker(
-                [51.11406169226646, 17.09764581610133],
+            var marker_10d64d1a77722346c149a6e277eecfd8 = L.marker(
+                [51.10191509471317, 17.081630835121594],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_4a11dd55ea4b29027280ac14b6cb6bcf = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_06f10b3c892f4487791094ee9645e6f4.setIcon(icon_4a11dd55ea4b29027280ac14b6cb6bcf);
-        
-    
-        var popup_28b77bb58e82b86519ba0e056820a843 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_4bdcaeb16f0b618cca259f9af0cd5d38 = $(`<div id="html_4bdcaeb16f0b618cca259f9af0cd5d38" style="width: 100.0%; height: 100.0%;">Fast_food Gastro Baza<br>Adress: Adama Mickiewicza 62<br>Distance:  932 m</div>`)[0];
-                popup_28b77bb58e82b86519ba0e056820a843.setContent(html_4bdcaeb16f0b618cca259f9af0cd5d38);
-            
-        
-
-        marker_06f10b3c892f4487791094ee9645e6f4.bindPopup(popup_28b77bb58e82b86519ba0e056820a843)
-        ;
-
-        
-    
-    
-            var marker_49f6f51cb0dfb69f6c7c9f2e0041be4e = L.marker(
-                [51.114090999377495, 17.09695990468818],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_e5500011255bf83385266e74ddec9458 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_49f6f51cb0dfb69f6c7c9f2e0041be4e.setIcon(icon_e5500011255bf83385266e74ddec9458);
-        
-    
-        var popup_9ce3ff96bd0aba62f04daab831cd6ccc = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_2e2c69f7ce34a4311aec79bf4ac9a645 = $(`<div id="html_2e2c69f7ce34a4311aec79bf4ac9a645" style="width: 100.0%; height: 100.0%;">Restaurant Cztery Pory Roku<br>Adress: Adama Mickiewicza 60<br>Distance:  964 m</div>`)[0];
-                popup_9ce3ff96bd0aba62f04daab831cd6ccc.setContent(html_2e2c69f7ce34a4311aec79bf4ac9a645);
-            
-        
-
-        marker_49f6f51cb0dfb69f6c7c9f2e0041be4e.bindPopup(popup_9ce3ff96bd0aba62f04daab831cd6ccc)
-        ;
-
-        
-    
-    
-            var marker_42f154242b3e8db276a33241cea4a32e = L.marker(
-                [51.10871874562129, 17.108555206091186],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_3e31a9d6b14349e8c8d414663be582ee = L.AwesomeMarkers.icon(
+            var icon_016c653e42c3b36a0a3257347222ccff = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_42f154242b3e8db276a33241cea4a32e.setIcon(icon_3e31a9d6b14349e8c8d414663be582ee);
+            marker_10d64d1a77722346c149a6e277eecfd8.setIcon(icon_016c653e42c3b36a0a3257347222ccff);
         
     
-        var popup_6bc882cd525c0a4a03ea5d8cbe7308a9 = L.popup({"maxWidth": "100%"});
+        var popup_c478ca324ffda1d30502578b6fca3d27 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_a15157e3e10dd998ffd1e2239b4a196d = $(`<div id="html_a15157e3e10dd998ffd1e2239b4a196d" style="width: 100.0%; height: 100.0%;">Park -<br>Adress: - -<br>Distance:  1067 m</div>`)[0];
-                popup_6bc882cd525c0a4a03ea5d8cbe7308a9.setContent(html_a15157e3e10dd998ffd1e2239b4a196d);
+                var html_9924157b0608a4fa9df8442feea8acc1 = $(`<div id="html_9924157b0608a4fa9df8442feea8acc1" style="width: 100.0%; height: 100.0%;">Park Park Dąbski<br>Adress: - -<br>Distance:  685 m</div>`)[0];
+                popup_c478ca324ffda1d30502578b6fca3d27.setContent(html_9924157b0608a4fa9df8442feea8acc1);
             
         
 
-        marker_42f154242b3e8db276a33241cea4a32e.bindPopup(popup_6bc882cd525c0a4a03ea5d8cbe7308a9)
+        marker_10d64d1a77722346c149a6e277eecfd8.bindPopup(popup_c478ca324ffda1d30502578b6fca3d27)
         ;
 
         
     
     
-            var marker_d0f0cf6e6e9232b7a175461c463cece4 = L.marker(
-                [51.109573023880245, 17.095062771841405],
+            var marker_4f9cdf5657fec9fdf224ee3498dcd6e4 = L.marker(
+                [51.109567132101795, 17.095057171890545],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_5f088aba1bbafac0c258eb37a4bbc022 = L.AwesomeMarkers.icon(
+            var icon_3b1c82b3aaf022a15f71b5dc821ae691 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
             );
-            marker_d0f0cf6e6e9232b7a175461c463cece4.setIcon(icon_5f088aba1bbafac0c258eb37a4bbc022);
+            marker_4f9cdf5657fec9fdf224ee3498dcd6e4.setIcon(icon_3b1c82b3aaf022a15f71b5dc821ae691);
         
     
-        var popup_508a8e7eff099a9b5519c9e6e35dff4f = L.popup({"maxWidth": "100%"});
+        var popup_2ad4a957a12e300aa664021f176ceb5a = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_ba044193577537880a91147466daab87 = $(`<div id="html_ba044193577537880a91147466daab87" style="width: 100.0%; height: 100.0%;">School Zespół Szkół nr 9<br>Adress: - -<br>Distance:  386 m</div>`)[0];
-                popup_508a8e7eff099a9b5519c9e6e35dff4f.setContent(html_ba044193577537880a91147466daab87);
+                var html_c2f98959116ee709ad07924f1308334e = $(`<div id="html_c2f98959116ee709ad07924f1308334e" style="width: 100.0%; height: 100.0%;">School Zespół Szkół nr 9<br>Adress: - -<br>Distance:  871 m</div>`)[0];
+                popup_2ad4a957a12e300aa664021f176ceb5a.setContent(html_c2f98959116ee709ad07924f1308334e);
             
         
 
-        marker_d0f0cf6e6e9232b7a175461c463cece4.bindPopup(popup_508a8e7eff099a9b5519c9e6e35dff4f)
+        marker_4f9cdf5657fec9fdf224ee3498dcd6e4.bindPopup(popup_2ad4a957a12e300aa664021f176ceb5a)
         ;
 
         
     
     
-            var marker_623d4f90f8d9dc07e1d49e277ce83863 = L.marker(
+            var marker_f873633e8a15b76211249aafbef3bf91 = L.marker(
                 [51.1026750542632, 17.083369579490544],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_3c16871b973ef2932e18a4395665fc43 = L.AwesomeMarkers.icon(
+            var icon_936ca1079e70d033db4e868bc2ae4939 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
             );
-            marker_623d4f90f8d9dc07e1d49e277ce83863.setIcon(icon_3c16871b973ef2932e18a4395665fc43);
+            marker_f873633e8a15b76211249aafbef3bf91.setIcon(icon_936ca1079e70d033db4e868bc2ae4939);
         
     
-        var popup_ae83f5812456738d1b014b45e27be91d = L.popup({"maxWidth": "100%"});
+        var popup_99108a0921b18860c2c3df7cbe4ea45e = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_037ae21601e68907571924cef6f1db92 = $(`<div id="html_037ae21601e68907571924cef6f1db92" style="width: 100.0%; height: 100.0%;">Kindergarten Przedszkole nr 54<br>Adress: - -<br>Distance:  1146 m</div>`)[0];
-                popup_ae83f5812456738d1b014b45e27be91d.setContent(html_037ae21601e68907571924cef6f1db92);
+                var html_0e7fd04414f1926524947b5b2919f2cf = $(`<div id="html_0e7fd04414f1926524947b5b2919f2cf" style="width: 100.0%; height: 100.0%;">Kindergarten Przedszkole nr 54<br>Adress: - -<br>Distance:  512 m</div>`)[0];
+                popup_99108a0921b18860c2c3df7cbe4ea45e.setContent(html_0e7fd04414f1926524947b5b2919f2cf);
             
         
 
-        marker_623d4f90f8d9dc07e1d49e277ce83863.bindPopup(popup_ae83f5812456738d1b014b45e27be91d)
+        marker_f873633e8a15b76211249aafbef3bf91.bindPopup(popup_99108a0921b18860c2c3df7cbe4ea45e)
         ;
 
         
     
     
-            var marker_c7ea8d1aac72466bbe51f7615d921329 = L.marker(
+            var marker_a0e18d1596ad33390f7726050045fb36 = L.marker(
                 [51.10913213746635, 17.093585853088683],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_f8b16a47d7d3ae72ac96a9c6416ca91f = L.AwesomeMarkers.icon(
+            var icon_71536cf5558c7303ae4c249c19b80cf6 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
             );
-            marker_c7ea8d1aac72466bbe51f7615d921329.setIcon(icon_f8b16a47d7d3ae72ac96a9c6416ca91f);
+            marker_a0e18d1596ad33390f7726050045fb36.setIcon(icon_71536cf5558c7303ae4c249c19b80cf6);
         
     
-        var popup_191f436fa688cf4fb561c1a57dcf4bcc = L.popup({"maxWidth": "100%"});
+        var popup_79eca5a1504d854947a024ae0a6a0f37 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_f535477d78c90a387c4d92f29161051c = $(`<div id="html_f535477d78c90a387c4d92f29161051c" style="width: 100.0%; height: 100.0%;">Kindergarten Przedszkole nr 2<br>Adress: - -<br>Distance:  265 m</div>`)[0];
-                popup_191f436fa688cf4fb561c1a57dcf4bcc.setContent(html_f535477d78c90a387c4d92f29161051c);
+                var html_16f18e49f0d58f3c5dae4a5b29489297 = $(`<div id="html_16f18e49f0d58f3c5dae4a5b29489297" style="width: 100.0%; height: 100.0%;">Kindergarten Przedszkole nr 2<br>Adress: - -<br>Distance:  780 m</div>`)[0];
+                popup_79eca5a1504d854947a024ae0a6a0f37.setContent(html_16f18e49f0d58f3c5dae4a5b29489297);
             
         
 
-        marker_c7ea8d1aac72466bbe51f7615d921329.bindPopup(popup_191f436fa688cf4fb561c1a57dcf4bcc)
+        marker_a0e18d1596ad33390f7726050045fb36.bindPopup(popup_79eca5a1504d854947a024ae0a6a0f37)
         ;
 
         
     
     
-            var marker_165123312d6a01e3ffcbdc7ceb89a4df = L.marker(
+            var marker_3fb3d3b683aace1d1edd34d544eb96db = L.marker(
                 [51.10579115493276, 17.092938012426572],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_8ed0c3196c12bee6bbe9a83014ef156b = L.AwesomeMarkers.icon(
+            var icon_9e969d8c204b57df734fe044c97d9175 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
             );
-            marker_165123312d6a01e3ffcbdc7ceb89a4df.setIcon(icon_8ed0c3196c12bee6bbe9a83014ef156b);
+            marker_3fb3d3b683aace1d1edd34d544eb96db.setIcon(icon_9e969d8c204b57df734fe044c97d9175);
         
     
-        var popup_983612cb86d88a2f8f745951d4e9f658 = L.popup({"maxWidth": "100%"});
+        var popup_7f6b6e56e51ceb5aa221ad0241d7fa18 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_bdbc9a894af155c9e4321a96988feaf5 = $(`<div id="html_bdbc9a894af155c9e4321a96988feaf5" style="width: 100.0%; height: 100.0%;">Kindergarten Przedszkole nr 27<br>Adress: - -<br>Distance:  299 m</div>`)[0];
-                popup_983612cb86d88a2f8f745951d4e9f658.setContent(html_bdbc9a894af155c9e4321a96988feaf5);
+                var html_ee1beb389b1453700227c8bf26a20fba = $(`<div id="html_ee1beb389b1453700227c8bf26a20fba" style="width: 100.0%; height: 100.0%;">Kindergarten Przedszkole nr 27<br>Adress: - -<br>Distance:  461 m</div>`)[0];
+                popup_7f6b6e56e51ceb5aa221ad0241d7fa18.setContent(html_ee1beb389b1453700227c8bf26a20fba);
             
         
 
-        marker_165123312d6a01e3ffcbdc7ceb89a4df.bindPopup(popup_983612cb86d88a2f8f745951d4e9f658)
+        marker_3fb3d3b683aace1d1edd34d544eb96db.bindPopup(popup_7f6b6e56e51ceb5aa221ad0241d7fa18)
         ;
 
         
     
     
-            var marker_7d37041411a2ca8bf03b725f6acdeb31 = L.marker(
+            var marker_59e285c0c046d372dd3e3fe57323c078 = L.marker(
                 [51.10569955525162, 17.085013836336955],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_9c55798a107d1f8c11b4982680a141aa = L.AwesomeMarkers.icon(
+            var icon_a494820e738bdacf21601f8dce7b52dd = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
             );
-            marker_7d37041411a2ca8bf03b725f6acdeb31.setIcon(icon_9c55798a107d1f8c11b4982680a141aa);
+            marker_59e285c0c046d372dd3e3fe57323c078.setIcon(icon_a494820e738bdacf21601f8dce7b52dd);
         
     
-        var popup_4015da363275ba55ad267be3721b8a5b = L.popup({"maxWidth": "100%"});
+        var popup_1743a1e388ed466edd430d72bb7b8c83 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_172b92239bb97f2fef35565219428236 = $(`<div id="html_172b92239bb97f2fef35565219428236" style="width: 100.0%; height: 100.0%;">Kindergarten Przedszkole nr 121<br>Adress: - -<br>Distance:  793 m</div>`)[0];
-                popup_4015da363275ba55ad267be3721b8a5b.setContent(html_172b92239bb97f2fef35565219428236);
+                var html_a23a6424839af22126ac662348fc3dc6 = $(`<div id="html_a23a6424839af22126ac662348fc3dc6" style="width: 100.0%; height: 100.0%;">Kindergarten Przedszkole nr 121<br>Adress: - -<br>Distance:  167 m</div>`)[0];
+                popup_1743a1e388ed466edd430d72bb7b8c83.setContent(html_a23a6424839af22126ac662348fc3dc6);
             
         
 
-        marker_7d37041411a2ca8bf03b725f6acdeb31.bindPopup(popup_4015da363275ba55ad267be3721b8a5b)
+        marker_59e285c0c046d372dd3e3fe57323c078.bindPopup(popup_1743a1e388ed466edd430d72bb7b8c83)
         ;
 
         
     
     
-            var marker_eacf58e3222f6fc3b5b4271382bdb2fb = L.marker(
+            var marker_ebc8fe872facf4d264e50e423c695230 = L.marker(
                 [51.10191175350953, 17.098732679939868],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_338c27888c9704a47f49c84b62f4d1e1 = L.AwesomeMarkers.icon(
+            var icon_e41b5d6ec3ae5ce755886a06cb6dfcf5 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_eacf58e3222f6fc3b5b4271382bdb2fb.setIcon(icon_338c27888c9704a47f49c84b62f4d1e1);
+            marker_ebc8fe872facf4d264e50e423c695230.setIcon(icon_e41b5d6ec3ae5ce755886a06cb6dfcf5);
         
     
-        var popup_460723d93da0ff0e581a9cc40ca89cea = L.popup({"maxWidth": "100%"});
+        var popup_12576a70fde572434a85cf8547521c0c = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_4715de9808b4711bad40de6f4f056e67 = $(`<div id="html_4715de9808b4711bad40de6f4f056e67" style="width: 100.0%; height: 100.0%;">Park -<br>Adress: - -<br>Distance:  861 m</div>`)[0];
-                popup_460723d93da0ff0e581a9cc40ca89cea.setContent(html_4715de9808b4711bad40de6f4f056e67);
+                var html_cd2c0ed2b5c807e3086412234ac2e361 = $(`<div id="html_cd2c0ed2b5c807e3086412234ac2e361" style="width: 100.0%; height: 100.0%;">Park -<br>Adress: - -<br>Distance:  1167 m</div>`)[0];
+                popup_12576a70fde572434a85cf8547521c0c.setContent(html_cd2c0ed2b5c807e3086412234ac2e361);
             
         
 
-        marker_eacf58e3222f6fc3b5b4271382bdb2fb.bindPopup(popup_460723d93da0ff0e581a9cc40ca89cea)
+        marker_ebc8fe872facf4d264e50e423c695230.bindPopup(popup_12576a70fde572434a85cf8547521c0c)
         ;
 
         
     
     
-            var marker_872afc0473508dfc74f5ff41cccf1a44 = L.marker(
-                [51.10485395984816, 17.09527173054633],
+            var marker_491e126005ad8b48e5caeac97ddd403e = L.marker(
+                [51.10486943956316, 17.095255907128827],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_321acb6fe4124714ef20a16c364a2404 = L.AwesomeMarkers.icon(
+            var icon_4720b49de147d0f0b42e83c2f5798787 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_872afc0473508dfc74f5ff41cccf1a44.setIcon(icon_321acb6fe4124714ef20a16c364a2404);
+            marker_491e126005ad8b48e5caeac97ddd403e.setIcon(icon_4720b49de147d0f0b42e83c2f5798787);
         
     
-        var popup_adc5737bb0a4efff5a7e8706380ec7c8 = L.popup({"maxWidth": "100%"});
+        var popup_48d28a2ba4c1c5f1673342f01ec44808 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_a088c2cd186d66073b4de94c17e5a03a = $(`<div id="html_a088c2cd186d66073b4de94c17e5a03a" style="width: 100.0%; height: 100.0%;">Park -<br>Adress: - -<br>Distance:  391 m</div>`)[0];
-                popup_adc5737bb0a4efff5a7e8706380ec7c8.setContent(html_a088c2cd186d66073b4de94c17e5a03a);
+                var html_5342212a3a323f07dc863d8b98df4a02 = $(`<div id="html_5342212a3a323f07dc863d8b98df4a02" style="width: 100.0%; height: 100.0%;">Park -<br>Adress: - -<br>Distance:  735 m</div>`)[0];
+                popup_48d28a2ba4c1c5f1673342f01ec44808.setContent(html_5342212a3a323f07dc863d8b98df4a02);
             
         
 
-        marker_872afc0473508dfc74f5ff41cccf1a44.bindPopup(popup_adc5737bb0a4efff5a7e8706380ec7c8)
+        marker_491e126005ad8b48e5caeac97ddd403e.bindPopup(popup_48d28a2ba4c1c5f1673342f01ec44808)
         ;
 
         
     
     
-            var marker_605ef5919ebc40e61533a7c8a2e46cdd = L.marker(
+            var marker_b7601c08badc1cb7c9d720a1d3dc8795 = L.marker(
                 [51.11381935, 17.0912988],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_325dafaee6421416861e4ecf140fc687 = L.AwesomeMarkers.icon(
+            var icon_9fb11fe57694f413723db6cba6f3863d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_605ef5919ebc40e61533a7c8a2e46cdd.setIcon(icon_325dafaee6421416861e4ecf140fc687);
+            marker_b7601c08badc1cb7c9d720a1d3dc8795.setIcon(icon_9fb11fe57694f413723db6cba6f3863d);
         
     
-        var popup_17881f7c49933c44ec2c3c50436fb629 = L.popup({"maxWidth": "100%"});
+        var popup_92bce1e1b26513e7987e835ffe7dea76 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_0f0734cc155212c8efd46811b8372511 = $(`<div id="html_0f0734cc155212c8efd46811b8372511" style="width: 100.0%; height: 100.0%;">Restaurant Pizzeria Pełnia<br>Adress: aleja Ignacego Jana Paderewskiego 35<br>Distance:  822 m</div>`)[0];
-                popup_17881f7c49933c44ec2c3c50436fb629.setContent(html_0f0734cc155212c8efd46811b8372511);
+                var html_2f3e930880ae861fefd011f5226c5be3 = $(`<div id="html_2f3e930880ae861fefd011f5226c5be3" style="width: 100.0%; height: 100.0%;">Fast_food Pizzeria Pełnia<br>Adress: aleja Ignacego Jana Paderewskiego 35<br>Distance:  1034 m</div>`)[0];
+                popup_92bce1e1b26513e7987e835ffe7dea76.setContent(html_2f3e930880ae861fefd011f5226c5be3);
             
         
 
-        marker_605ef5919ebc40e61533a7c8a2e46cdd.bindPopup(popup_17881f7c49933c44ec2c3c50436fb629)
+        marker_b7601c08badc1cb7c9d720a1d3dc8795.bindPopup(popup_92bce1e1b26513e7987e835ffe7dea76)
         ;
 
         
     
     
-            var marker_57f0dad084a8ed5867c3accb4a7c3a31 = L.marker(
+            var marker_d399bd61bddb6d986746d6c7028253f8 = L.marker(
                 [51.105032640315464, 17.09378265245076],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_0f430176718ba718ccca005891d24df2 = L.AwesomeMarkers.icon(
+            var icon_fdadcb7aca4e2eda70c59c42e58d5449 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
             );
-            marker_57f0dad084a8ed5867c3accb4a7c3a31.setIcon(icon_0f430176718ba718ccca005891d24df2);
+            marker_d399bd61bddb6d986746d6c7028253f8.setIcon(icon_fdadcb7aca4e2eda70c59c42e58d5449);
         
     
-        var popup_156ead231fac276497cece62965ee0de = L.popup({"maxWidth": "100%"});
+        var popup_81770c9cf8dcc302d8a601f013432d2a = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_a2f7e7b2a98564916e15b0353d2eca06 = $(`<div id="html_a2f7e7b2a98564916e15b0353d2eca06" style="width: 100.0%; height: 100.0%;">School Szkoła Podstawowa nr 66<br>Adress: - -<br>Distance:  287 m</div>`)[0];
-                popup_156ead231fac276497cece62965ee0de.setContent(html_a2f7e7b2a98564916e15b0353d2eca06);
+                var html_82331ef80aeba7170ec8857de34ff221 = $(`<div id="html_82331ef80aeba7170ec8857de34ff221" style="width: 100.0%; height: 100.0%;">School Szkoła Podstawowa nr 66<br>Adress: - -<br>Distance:  612 m</div>`)[0];
+                popup_81770c9cf8dcc302d8a601f013432d2a.setContent(html_82331ef80aeba7170ec8857de34ff221);
             
         
 
-        marker_57f0dad084a8ed5867c3accb4a7c3a31.bindPopup(popup_156ead231fac276497cece62965ee0de)
+        marker_d399bd61bddb6d986746d6c7028253f8.bindPopup(popup_81770c9cf8dcc302d8a601f013432d2a)
         ;
 
         
     
     
-            var marker_640167414b5f2bc0b3abbdc857a6835f = L.marker(
-                [51.100062594292844, 17.098954580415803],
+            var marker_20846c12f6f66f0e30a658e40b6487fd = L.marker(
+                [51.103093981241045, 17.08991290361382],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_0aff10450673944482977c08ad7038ae = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
-            );
-            marker_640167414b5f2bc0b3abbdc857a6835f.setIcon(icon_0aff10450673944482977c08ad7038ae);
-        
-    
-        var popup_5d4b56e1715b91d5049a417555666e42 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_2e1fcfa39421011d53bbe1efe3e88fc9 = $(`<div id="html_2e1fcfa39421011d53bbe1efe3e88fc9" style="width: 100.0%; height: 100.0%;">School Niepubliczny Zespół Szkolno-Przedszkolny Nurt<br>Adress: - -<br>Distance:  1144 m</div>`)[0];
-                popup_5d4b56e1715b91d5049a417555666e42.setContent(html_2e1fcfa39421011d53bbe1efe3e88fc9);
-            
-        
-
-        marker_640167414b5f2bc0b3abbdc857a6835f.bindPopup(popup_5d4b56e1715b91d5049a417555666e42)
-        ;
-
-        
-    
-    
-            var marker_68f601a845962b72f1bd17118611ad12 = L.marker(
-                [51.10309800473188, 17.089909605787163],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_99cf39443dc8f9ee5e2d525e5696c57a = L.AwesomeMarkers.icon(
+            var icon_0788c8d2dce7db75326f1649be84a2e3 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_68f601a845962b72f1bd17118611ad12.setIcon(icon_99cf39443dc8f9ee5e2d525e5696c57a);
+            marker_20846c12f6f66f0e30a658e40b6487fd.setIcon(icon_0788c8d2dce7db75326f1649be84a2e3);
         
     
-        var popup_7e38b1987fef32d7fc6e61773442171b = L.popup({"maxWidth": "100%"});
+        var popup_c4f19eec47dd9b071e54152407259a74 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_3ba6522a83a909da746a423c66ccaeca = $(`<div id="html_3ba6522a83a909da746a423c66ccaeca" style="width: 100.0%; height: 100.0%;">Park -<br>Adress: - -<br>Distance:  754 m</div>`)[0];
-                popup_7e38b1987fef32d7fc6e61773442171b.setContent(html_3ba6522a83a909da746a423c66ccaeca);
+                var html_aa7aeb89d5e31ae6cd036c895ac13f33 = $(`<div id="html_aa7aeb89d5e31ae6cd036c895ac13f33" style="width: 100.0%; height: 100.0%;">Park -<br>Adress: - -<br>Distance:  632 m</div>`)[0];
+                popup_c4f19eec47dd9b071e54152407259a74.setContent(html_aa7aeb89d5e31ae6cd036c895ac13f33);
             
         
 
-        marker_68f601a845962b72f1bd17118611ad12.bindPopup(popup_7e38b1987fef32d7fc6e61773442171b)
+        marker_20846c12f6f66f0e30a658e40b6487fd.bindPopup(popup_c4f19eec47dd9b071e54152407259a74)
         ;
 
         
     
     
-            var marker_fb1e939a3a0298865bb3e3c665bb762e = L.marker(
-                [51.10737945150855, 17.107267244449552],
-                {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
-        
-    
-            var icon_f512b23d6b898c3c93c08e70e4dbc8b7 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
-            );
-            marker_fb1e939a3a0298865bb3e3c665bb762e.setIcon(icon_f512b23d6b898c3c93c08e70e4dbc8b7);
-        
-    
-        var popup_42be361f79013f7303e1a83eced0cb3c = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_6566bcad6b6ee41c86b92fb562ed6a4a = $(`<div id="html_6566bcad6b6ee41c86b92fb562ed6a4a" style="width: 100.0%; height: 100.0%;">Kindergarten Katolickie Przedszkole Niepubliczne "Ochronka"<br>Adress: - -<br>Distance:  993 m</div>`)[0];
-                popup_42be361f79013f7303e1a83eced0cb3c.setContent(html_6566bcad6b6ee41c86b92fb562ed6a4a);
-            
-        
-
-        marker_fb1e939a3a0298865bb3e3c665bb762e.bindPopup(popup_42be361f79013f7303e1a83eced0cb3c)
-        ;
-
-        
-    
-    
-            var marker_6f72e39f89793744f05efc577030dc0b = L.marker(
+            var marker_9161b590a669e7067320391e7be5e220 = L.marker(
                 [51.10366182341223, 17.087230815989184],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_dcdd7d789fdaaa8e7aee772e0a52541f = L.AwesomeMarkers.icon(
+            var icon_83827702af7aca6801e8dc1a8a1e5928 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
             );
-            marker_6f72e39f89793744f05efc577030dc0b.setIcon(icon_dcdd7d789fdaaa8e7aee772e0a52541f);
+            marker_9161b590a669e7067320391e7be5e220.setIcon(icon_83827702af7aca6801e8dc1a8a1e5928);
         
     
-        var popup_e089f530cd57d1406e1d486f13bc8ac6 = L.popup({"maxWidth": "100%"});
+        var popup_45aef8bdc5a4ceb5168d9a82b46be7d0 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_1b74f89e558c56835ea3807cfb6801ea = $(`<div id="html_1b74f89e558c56835ea3807cfb6801ea" style="width: 100.0%; height: 100.0%;">Kindergarten Punkt Przedszkolny Montessori House<br>Adress: - -<br>Distance:  1003 m</div>`)[0];
-                popup_e089f530cd57d1406e1d486f13bc8ac6.setContent(html_1b74f89e558c56835ea3807cfb6801ea);
+                var html_7eb328ed1c7ffb1cd4de19462170c6f6 = $(`<div id="html_7eb328ed1c7ffb1cd4de19462170c6f6" style="width: 100.0%; height: 100.0%;">Kindergarten Punkt Przedszkolny Montessori House<br>Adress: - -<br>Distance:  503 m</div>`)[0];
+                popup_45aef8bdc5a4ceb5168d9a82b46be7d0.setContent(html_7eb328ed1c7ffb1cd4de19462170c6f6);
             
         
 
-        marker_6f72e39f89793744f05efc577030dc0b.bindPopup(popup_e089f530cd57d1406e1d486f13bc8ac6)
+        marker_9161b590a669e7067320391e7be5e220.bindPopup(popup_45aef8bdc5a4ceb5168d9a82b46be7d0)
         ;
 
         
     
     
-            var marker_58a8add72e04e557020fb2283d46737a = L.marker(
+            var marker_77060154a1ac7f0e03adc4766bf6150d = L.marker(
                 [51.10523944424294, 17.093552367008243],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_40571079db365a2eee0b3d287a93b87d = L.AwesomeMarkers.icon(
+            var icon_a97dfe7a86565feb17745cfaa151ef7c = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
             );
-            marker_58a8add72e04e557020fb2283d46737a.setIcon(icon_40571079db365a2eee0b3d287a93b87d);
+            marker_77060154a1ac7f0e03adc4766bf6150d.setIcon(icon_a97dfe7a86565feb17745cfaa151ef7c);
         
     
-        var popup_5669643a97ea4b2da530c4600f33c248 = L.popup({"maxWidth": "100%"});
+        var popup_fac4fd2f145ce260f16785ec2b807e6c = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_415d599645975d859720a1140ac9fa0e = $(`<div id="html_415d599645975d859720a1140ac9fa0e" style="width: 100.0%; height: 100.0%;">School Zespół Szkolno-Przedszkolny Nr 22<br>Adress: - -<br>Distance:  287 m</div>`)[0];
-                popup_5669643a97ea4b2da530c4600f33c248.setContent(html_415d599645975d859720a1140ac9fa0e);
+                var html_10ab0ea5aedede94530c4992dd10e9a6 = $(`<div id="html_10ab0ea5aedede94530c4992dd10e9a6" style="width: 100.0%; height: 100.0%;">School Zespół Szkolno-Przedszkolny Nr 22<br>Adress: - -<br>Distance:  612 m</div>`)[0];
+                popup_fac4fd2f145ce260f16785ec2b807e6c.setContent(html_10ab0ea5aedede94530c4992dd10e9a6);
             
         
 
-        marker_58a8add72e04e557020fb2283d46737a.bindPopup(popup_5669643a97ea4b2da530c4600f33c248)
+        marker_77060154a1ac7f0e03adc4766bf6150d.bindPopup(popup_fac4fd2f145ce260f16785ec2b807e6c)
         ;
 
         
     
     
-            var marker_4acbef4a2b12f82c2e70007fb6d271bc = L.marker(
+            var marker_cd708e7c4aefa3fb84b25c79281dc8b2 = L.marker(
                 [51.10888717275138, 17.08129014393302],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_f9125e77a363c32b24889e061c86b7e7 = L.AwesomeMarkers.icon(
+            var icon_9a71485653820fb9ac084589af615dc5 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_4acbef4a2b12f82c2e70007fb6d271bc.setIcon(icon_f9125e77a363c32b24889e061c86b7e7);
+            marker_cd708e7c4aefa3fb84b25c79281dc8b2.setIcon(icon_9a71485653820fb9ac084589af615dc5);
         
     
-        var popup_9b303ce175653fd42bc765a4c51d464e = L.popup({"maxWidth": "100%"});
+        var popup_08fc8284f7a52377fcf28be4103774fd = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_83a965f0aab43efe680b08d6a9423053 = $(`<div id="html_83a965f0aab43efe680b08d6a9423053" style="width: 100.0%; height: 100.0%;">Park Park Szczytnicki<br>Adress: - -<br>Distance:  1182 m</div>`)[0];
-                popup_9b303ce175653fd42bc765a4c51d464e.setContent(html_83a965f0aab43efe680b08d6a9423053);
+                var html_a934d62468ee51fff22fb6c34697b88d = $(`<div id="html_a934d62468ee51fff22fb6c34697b88d" style="width: 100.0%; height: 100.0%;">Park Park Szczytnicki<br>Adress: - -<br>Distance:  587 m</div>`)[0];
+                popup_08fc8284f7a52377fcf28be4103774fd.setContent(html_a934d62468ee51fff22fb6c34697b88d);
             
         
 
-        marker_4acbef4a2b12f82c2e70007fb6d271bc.bindPopup(popup_9b303ce175653fd42bc765a4c51d464e)
+        marker_cd708e7c4aefa3fb84b25c79281dc8b2.bindPopup(popup_08fc8284f7a52377fcf28be4103774fd)
         ;
 
         
     
     
-            var marker_f7081c0339d5cfcdde8ce545c20bca49 = L.marker(
-                [51.107760624280544, 17.087382861741492],
+            var marker_6de38b3fd79162a1c70aaf130499ba14 = L.marker(
+                [51.11494411889314, 17.08236580760205],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_045859b0dc6050859664f658f990b9d3 = L.AwesomeMarkers.icon(
+            var icon_07b9c2c662a45022717b7dbba8f2d322 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_f7081c0339d5cfcdde8ce545c20bca49.setIcon(icon_045859b0dc6050859664f658f990b9d3);
+            marker_6de38b3fd79162a1c70aaf130499ba14.setIcon(icon_07b9c2c662a45022717b7dbba8f2d322);
         
     
-        var popup_43ab8b72418cfd61715bb206b2f89b94 = L.popup({"maxWidth": "100%"});
+        var popup_7af7cf6df16a232605b87579f4a94449 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_29a0c2b945456e25e75e407f96269809 = $(`<div id="html_29a0c2b945456e25e75e407f96269809" style="width: 100.0%; height: 100.0%;">Park Park Szczytnicki<br>Adress: - -<br>Distance:  688 m</div>`)[0];
-                popup_43ab8b72418cfd61715bb206b2f89b94.setContent(html_29a0c2b945456e25e75e407f96269809);
+                var html_45eb6480a202a65fdbf62f5f9f1f1f60 = $(`<div id="html_45eb6480a202a65fdbf62f5f9f1f1f60" style="width: 100.0%; height: 100.0%;">Park Park Szczytnicki<br>Adress: - -<br>Distance:  1198 m</div>`)[0];
+                popup_7af7cf6df16a232605b87579f4a94449.setContent(html_45eb6480a202a65fdbf62f5f9f1f1f60);
             
         
 
-        marker_f7081c0339d5cfcdde8ce545c20bca49.bindPopup(popup_43ab8b72418cfd61715bb206b2f89b94)
+        marker_6de38b3fd79162a1c70aaf130499ba14.bindPopup(popup_7af7cf6df16a232605b87579f4a94449)
         ;
 
         
     
     
-            var marker_8018fa212f82c6f650ddd8855394f067 = L.marker(
-                [51.1020152, 17.093645],
+            var marker_2de53a0ccefe1299a8ccb1257e0127c0 = L.marker(
+                [51.107769279314965, 17.087373552051723],
                 {}
-            ).addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+            ).addTo(map_adf0e48439bd1785f3897734063e75bd);
         
     
-            var icon_eae4930ce9dad6b5b4cce6715b84f4bf = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            var icon_ccf64881b9177ffa3dbbab68318fe2b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_8018fa212f82c6f650ddd8855394f067.setIcon(icon_eae4930ce9dad6b5b4cce6715b84f4bf);
+            marker_2de53a0ccefe1299a8ccb1257e0127c0.setIcon(icon_ccf64881b9177ffa3dbbab68318fe2b4);
         
     
-        var popup_8cd6c76e35e120621b7e43aa9e1ace01 = L.popup({"maxWidth": "100%"});
+        var popup_b2205fa522c4567297d857a254ebb4b7 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_a003e91bdd6c98193e8a8616524d4335 = $(`<div id="html_a003e91bdd6c98193e8a8616524d4335" style="width: 100.0%; height: 100.0%;">Workplace Your workplace<br>Adress: Brandta 12<br>Distance:  865 m</div>`)[0];
-                popup_8cd6c76e35e120621b7e43aa9e1ace01.setContent(html_a003e91bdd6c98193e8a8616524d4335);
+                var html_977d21fa8dac47f252035aa48d16b25f = $(`<div id="html_977d21fa8dac47f252035aa48d16b25f" style="width: 100.0%; height: 100.0%;">Park Park Szczytnicki<br>Adress: - -<br>Distance:  224 m</div>`)[0];
+                popup_b2205fa522c4567297d857a254ebb4b7.setContent(html_977d21fa8dac47f252035aa48d16b25f);
             
         
 
-        marker_8018fa212f82c6f650ddd8855394f067.bindPopup(popup_8cd6c76e35e120621b7e43aa9e1ace01)
+        marker_2de53a0ccefe1299a8ccb1257e0127c0.bindPopup(popup_b2205fa522c4567297d857a254ebb4b7)
         ;
 
         
     
     
-        function geo_json_361a6f07cfce3f83cfca5bc5e337c11f_styler(feature) {
+        function geo_json_c9445f7a6add7727a06b175abd88caf3_styler(feature) {
             switch(feature.id) {
-                case "43": case "44": 
+                case "31": case "32": 
                     return {"color": "pink", "fillColor": "pink"};
-                case "45": case "46": case "55": 
-                    return {"color": "orange", "fillColor": "orange"};
-                case "47": case "53": case "54": case "58": case "62": case "63": 
+                case "33": case "39": case "40": case "43": case "46": case "47": case "48": 
                     return {"color": "green", "fillColor": "green"};
-                default:
+                case "34": case "35": case "36": case "37": case "38": case "42": case "44": case "45": 
                     return {"color": "cadetblue", "fillColor": "cadetblue"};
+                default:
+                    return {"color": "orange", "fillColor": "orange"};
             }
         }
 
-        function geo_json_361a6f07cfce3f83cfca5bc5e337c11f_onEachFeature(feature, layer) {
+        function geo_json_c9445f7a6add7727a06b175abd88caf3_onEachFeature(feature, layer) {
             layer.on({
             });
         };
-        var geo_json_361a6f07cfce3f83cfca5bc5e337c11f = L.geoJson(null, {
-                onEachFeature: geo_json_361a6f07cfce3f83cfca5bc5e337c11f_onEachFeature,
+        var geo_json_c9445f7a6add7727a06b175abd88caf3 = L.geoJson(null, {
+                onEachFeature: geo_json_c9445f7a6add7727a06b175abd88caf3_onEachFeature,
             
-                style: geo_json_361a6f07cfce3f83cfca5bc5e337c11f_styler,
+                style: geo_json_c9445f7a6add7727a06b175abd88caf3_styler,
         });
 
-        function geo_json_361a6f07cfce3f83cfca5bc5e337c11f_add (data) {
-            geo_json_361a6f07cfce3f83cfca5bc5e337c11f
-                .addData(data)
-                .addTo(map_bf63bd6a2303fcc2d6be31a82f9440ae);
+        function geo_json_c9445f7a6add7727a06b175abd88caf3_add (data) {
+            geo_json_c9445f7a6add7727a06b175abd88caf3
+                .addData(data);
         }
-            geo_json_361a6f07cfce3f83cfca5bc5e337c11f_add({"bbox": [17.0750394, 51.0991708, 17.1093286, 51.1141733], "features": [{"bbox": [17.1052966, 51.1052328, 17.1082244, 51.1063709], "geometry": {"coordinates": [[[17.1082244, 51.1060397], [17.108151, 51.1058053], [17.1080441, 51.1054705], [17.1079687, 51.1052328], [17.1073957, 51.1053191], [17.1070842, 51.105357], [17.1067104, 51.1053827], [17.1065738, 51.1053907], [17.1062904, 51.1054072], [17.1061932, 51.1054171], [17.1059489, 51.1054577], [17.1058011, 51.1054849], [17.1057481, 51.1054962], [17.1056496, 51.1055252], [17.1056624, 51.1055612], [17.1056298, 51.1055772], [17.1055971, 51.1055932], [17.1055086, 51.105592], [17.1052966, 51.1056543], [17.1057046, 51.1061229], [17.1057253, 51.1061466], [17.1057346, 51.1061572], [17.105821, 51.1062565], [17.1059023, 51.1063498], [17.1059096, 51.1063564], [17.1059173, 51.1063632], [17.1059455, 51.1063709], [17.1070248, 51.1062149], [17.1072166, 51.1061872], [17.1075004, 51.1061462], [17.1075701, 51.1061362], [17.1081101, 51.1060583], [17.10813, 51.1060554], [17.1081441, 51.1060531], [17.1082244, 51.1060397]]], "type": "Polygon"}, "id": "42", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0842465, 51.101883, 17.0846838, 51.1021547], "geometry": {"coordinates": [[[17.0842465, 51.1020716], [17.0843737, 51.1021547], [17.0844076, 51.1021341], [17.0846838, 51.1019666], [17.0845585, 51.101883], [17.0842465, 51.1020716]]], "type": "Polygon"}, "id": "43", "properties": {"kolor": "pink"}, "type": "Feature"}, {"bbox": [17.1010141, 51.1096753, 17.1011468, 51.1097474], "geometry": {"coordinates": [[[17.1011308, 51.1097402], [17.1011468, 51.1096904], [17.1010661, 51.1096798], [17.1010323, 51.1096753], [17.1010141, 51.1097256], [17.1010275, 51.1097363], [17.1011131, 51.1097474], [17.1011308, 51.1097402]]], "type": "Polygon"}, "id": "44", "properties": {"kolor": "pink"}, "type": "Feature"}, {"bbox": [17.0975522, 51.114013, 17.097748, 51.1141102], "geometry": {"coordinates": [[[17.0977075, 51.114092], [17.0977373, 51.114093], [17.0977398, 51.1140931], [17.097748, 51.1140236], [17.0976652, 51.1140201], [17.0976658, 51.1140173], [17.0975612, 51.114013], [17.0975522, 51.1141078], [17.097586, 51.114109], [17.097587, 51.1141052], [17.097705, 51.1141102], [17.0977075, 51.114092]]], "type": "Polygon"}, "id": "45", "properties": {"kolor": "orange"}, "type": "Feature"}, {"bbox": [17.0968974, 51.1140087, 17.0970224, 51.1141733], "geometry": {"coordinates": [[[17.0968974, 51.1141695], [17.0970082, 51.1141733], [17.0970178, 51.1140648], [17.0970224, 51.1140125], [17.0969116, 51.1140087], [17.0968974, 51.1141695]]], "type": "Polygon"}, "id": "46", "properties": {"kolor": "orange"}, "type": "Feature"}, {"bbox": [17.1078401, 51.1079061, 17.1093286, 51.1094773], "geometry": {"coordinates": [[[17.1091994, 51.1079283], [17.1092367, 51.1079061], [17.1093286, 51.1079543], [17.1093151, 51.1079662], [17.1093008, 51.1079793], [17.1091728, 51.1081995], [17.1091644, 51.1082133], [17.109157, 51.1082284], [17.1090744, 51.1083748], [17.1089055, 51.1086884], [17.108778, 51.1089314], [17.1087745, 51.1089467], [17.1087461, 51.1091126], [17.1087434, 51.1091348], [17.1087132, 51.1093862], [17.1087106, 51.1094076], [17.1086429, 51.1094098], [17.108548, 51.1094417], [17.1084796, 51.1094659], [17.1084473, 51.1094773], [17.1078468, 51.1087635], [17.1078401, 51.1087296], [17.107854, 51.1087089], [17.1079229, 51.1086674], [17.1091994, 51.1079283]]], "type": "Polygon"}, "id": "47", "properties": {"kolor": "green"}, "type": "Feature"}, {"bbox": [17.0939146, 51.1087769, 17.0962262, 51.1101999], "geometry": {"coordinates": [[[17.0959454, 51.1100288], [17.0958786, 51.110028], [17.0955146, 51.1100206], [17.0953551, 51.1100306], [17.0953104, 51.1100328], [17.094915, 51.1100562], [17.0944733, 51.1101038], [17.0940423, 51.1101999], [17.0939997, 51.1101974], [17.0939718, 51.110189], [17.0939452, 51.1101756], [17.0939225, 51.1101564], [17.0939146, 51.1101339], [17.0939199, 51.110108], [17.0943341, 51.1091121], [17.0948295, 51.1091963], [17.0949914, 51.1087769], [17.0952744, 51.108931], [17.0956527, 51.1090871], [17.0957093, 51.1091103], [17.0958414, 51.1091609], [17.095847, 51.109163], [17.0959246, 51.109187], [17.0959615, 51.1091983], [17.0960771, 51.109234], [17.0961697, 51.1092592], [17.0962262, 51.1092757], [17.0961304, 51.1094458], [17.0960451, 51.1096429], [17.0959826, 51.109845], [17.0959454, 51.1100288]]], "type": "Polygon"}, "id": "48", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0827908, 51.1022545, 17.083836, 51.1031758], "geometry": {"coordinates": [[[17.0836832, 51.1031758], [17.0837634, 51.1029172], [17.083836, 51.1027634], [17.0832566, 51.1022545], [17.0827908, 51.1025014], [17.0832293, 51.1028372], [17.0836832, 51.1031758]]], "type": "Polygon"}, "id": "49", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0929621, 51.1085748, 17.0942662, 51.1097265], "geometry": {"coordinates": [[[17.093834, 51.1097265], [17.0942662, 51.1087034], [17.0932403, 51.1085748], [17.0931057, 51.1091263], [17.0930868, 51.109161], [17.092974, 51.10942], [17.0929621, 51.1094639], [17.0930213, 51.1095744], [17.093834, 51.1097265]]], "type": "Polygon"}, "id": "50", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0919778, 51.1054778, 17.0937536, 51.1060958], "geometry": {"coordinates": [[[17.0921782, 51.1060667], [17.0931839, 51.1060832], [17.0936636, 51.1060958], [17.0937314, 51.1058227], [17.0937455, 51.1058106], [17.0937536, 51.1054988], [17.0930051, 51.1054778], [17.092558, 51.1055267], [17.0925681, 51.1055661], [17.092553, 51.1055661], [17.092561, 51.1055934], [17.0924073, 51.1056118], [17.0923668, 51.1056163], [17.0923438, 51.1055552], [17.0922885, 51.1055622], [17.0919778, 51.105601], [17.0921782, 51.1060667]]], "type": "Polygon"}, "id": "51", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0844374, 51.105241, 17.0856488, 51.1062641], "geometry": {"coordinates": [[[17.0845435, 51.1056831], [17.0845671, 51.1057718], [17.0845851, 51.1058165], [17.0848208, 51.1059553], [17.0851762, 51.106158], [17.0852253, 51.1061848], [17.0852894, 51.1062066], [17.0854608, 51.1062533], [17.0855864, 51.1062641], [17.0856205, 51.1062558], [17.0856401, 51.1062379], [17.0856488, 51.1062138], [17.0855971, 51.1061041], [17.0855272, 51.1059603], [17.0853279, 51.1059991], [17.0853004, 51.1059474], [17.0852643, 51.1058743], [17.0854719, 51.1058309], [17.0853426, 51.105566], [17.0852102, 51.1052904], [17.0850542, 51.1052931], [17.0850524, 51.105241], [17.0844374, 51.1052558], [17.0845094, 51.1055304], [17.0845435, 51.1056831]]], "type": "Polygon"}, "id": "52", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0972277, 51.1009338, 17.1002006, 51.1027958], "geometry": {"coordinates": [[[17.0972277, 51.1022573], [17.0979319, 51.102152], [17.0978709, 51.1019804], [17.0978987, 51.1019499], [17.0978064, 51.1017195], [17.097545, 51.1017559], [17.0974934, 51.1016273], [17.0981847, 51.1015175], [17.098073, 51.1010562], [17.0980642, 51.1010063], [17.0983789, 51.1009894], [17.0992096, 51.1009338], [17.0992857, 51.1009708], [17.0993065, 51.1009887], [17.0993368, 51.1010637], [17.0993748, 51.1011424], [17.0994443, 51.1012984], [17.0995156, 51.1013301], [17.0996036, 51.101492], [17.0996291, 51.1015055], [17.099944, 51.1016827], [17.1000018, 51.1018328], [17.1002006, 51.102346], [17.098652, 51.1026102], [17.0975777, 51.1027731], [17.0974286, 51.1027958], [17.0972277, 51.1022573]]], "type": "Polygon"}, "id": "53", "properties": {"kolor": "green"}, "type": "Feature"}, {"bbox": [17.0942579, 51.1037766, 17.0964021, 51.1061199], "geometry": {"coordinates": [[[17.0961542, 51.1037766], [17.0962654, 51.1044348], [17.0962716, 51.1044935], [17.0962892, 51.1045756], [17.0964021, 51.1046561], [17.0963479, 51.1047114], [17.0962085, 51.1046761], [17.0960047, 51.1046543], [17.0958478, 51.1046472], [17.0957053, 51.1046628], [17.0955453, 51.1046916], [17.0954023, 51.1047341], [17.0951706, 51.1048518], [17.0950504, 51.1049409], [17.0949572, 51.1050436], [17.0949032, 51.1051309], [17.0947414, 51.1056679], [17.0946974, 51.105881], [17.0946933, 51.106079], [17.0946885, 51.1061199], [17.094337, 51.1061123], [17.0943423, 51.1059708], [17.0942579, 51.105937], [17.0942721, 51.1058903], [17.0944722, 51.1053142], [17.0945215, 51.1052023], [17.0945922, 51.1050894], [17.0949357, 51.1046914], [17.095251, 51.1043431], [17.0953438, 51.1042406], [17.0953609, 51.1042217], [17.0956009, 51.104163], [17.0956605, 51.1041659], [17.0957355, 51.1041476], [17.0957338, 51.1041207], [17.0960192, 51.1039753], [17.0960413, 51.1039418], [17.0960329, 51.1038857], [17.0961542, 51.1037766]]], "type": "Polygon"}, "id": "54", "properties": {"kolor": "green"}, "type": "Feature"}, {"bbox": [17.0912095, 51.1137819, 17.0913881, 51.1138568], "geometry": {"coordinates": [[[17.0913881, 51.1137865], [17.0912142, 51.1137819], [17.0912095, 51.1138522], [17.0913834, 51.1138568], [17.0913881, 51.1137865]]], "type": "Polygon"}, "id": "55", "properties": {"kolor": "orange"}, "type": "Feature"}, {"bbox": [17.0925181, 51.1042406, 17.0953438, 51.1061019], "geometry": {"coordinates": [[[17.0937536, 51.1054988], [17.0930051, 51.1054778], [17.092558, 51.1055267], [17.0925462, 51.105529], [17.0925181, 51.1053962], [17.0925585, 51.1048854], [17.0925305, 51.1048186], [17.0925435, 51.1047372], [17.0929767, 51.1047223], [17.0929302, 51.1045708], [17.0933441, 51.1045245], [17.0933719, 51.1045387], [17.0940304, 51.1044643], [17.0940525, 51.1044462], [17.0947216, 51.1043679], [17.0950647, 51.1042866], [17.0953438, 51.1042406], [17.095251, 51.1043431], [17.0949357, 51.1046914], [17.0945922, 51.1050894], [17.0945215, 51.1052023], [17.0944722, 51.1053142], [17.0942721, 51.1058903], [17.0939024, 51.1058529], [17.0938322, 51.1061019], [17.0936952, 51.1060967], [17.0936636, 51.1060958], [17.0937314, 51.1058227], [17.0937455, 51.1058106], [17.0937536, 51.1054988]]], "type": "Polygon"}, "id": "56", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0982461, 51.0991708, 17.0998228, 51.1008623], "geometry": {"coordinates": [[[17.0998228, 51.1007763], [17.0985, 51.1008623], [17.0982461, 51.0992709], [17.0991925, 51.0991708], [17.09954, 51.1000572], [17.099744, 51.1005773], [17.0998228, 51.1007763]]], "type": "Polygon"}, "id": "57", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0891605, 51.1026186, 17.0905175, 51.1037289], "geometry": {"coordinates": [[[17.0892894, 51.1026186], [17.0905175, 51.1026717], [17.0903777, 51.1033567], [17.090309, 51.1035491], [17.0902292, 51.1036698], [17.0898588, 51.1037289], [17.0898468, 51.103662], [17.0897157, 51.103675], [17.089694, 51.103615], [17.0896667, 51.1035598], [17.0895999, 51.1035693], [17.0895181, 51.1033317], [17.0893984, 51.103093], [17.0893309, 51.1029227], [17.0893731, 51.1028368], [17.0893146, 51.1028125], [17.089235, 51.1027548], [17.0891605, 51.1026376], [17.0892894, 51.1026186]]], "type": "Polygon"}, "id": "58", "properties": {"kolor": "green"}, "type": "Feature"}, {"bbox": [17.1068417, 51.1071426, 17.1076823, 51.1076154], "geometry": {"coordinates": [[[17.1068417, 51.1073713], [17.1068591, 51.1073895], [17.10687, 51.1074015], [17.1068808, 51.1074135], [17.1069214, 51.1074597], [17.1069772, 51.1075272], [17.106978, 51.1075352], [17.1069826, 51.1075407], [17.106988, 51.1075473], [17.1069989, 51.1075522], [17.1070514, 51.1076154], [17.107188, 51.1075686], [17.1072366, 51.1075507], [17.1076823, 51.1073864], [17.107524, 51.1071761], [17.1075044, 51.1071499], [17.1074998, 51.1071426], [17.1071313, 51.1072707], [17.1068417, 51.1073713]]], "type": "Polygon"}, "id": "59", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0869022, 51.1034785, 17.0875605, 51.1038422], "geometry": {"coordinates": [[[17.086981, 51.1038422], [17.0869178, 51.1036329], [17.0869022, 51.1035812], [17.0870777, 51.1035234], [17.087471, 51.1034785], [17.0875605, 51.1037726], [17.0872361, 51.1038116], [17.086981, 51.1038422]]], "type": "Polygon"}, "id": "60", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0919778, 51.1042406, 17.0953438, 51.1061019], "geometry": {"coordinates": [[[17.0925435, 51.1047372], [17.0925305, 51.1048186], [17.0925585, 51.1048854], [17.0925181, 51.1053962], [17.0925462, 51.105529], [17.092558, 51.1055267], [17.0925681, 51.1055661], [17.092553, 51.1055661], [17.092561, 51.1055934], [17.0924073, 51.1056118], [17.0923668, 51.1056163], [17.0923438, 51.1055552], [17.0922885, 51.1055622], [17.0919778, 51.105601], [17.0921782, 51.1060667], [17.0931839, 51.1060832], [17.0936636, 51.1060958], [17.0936952, 51.1060967], [17.0938322, 51.1061019], [17.0939024, 51.1058529], [17.0942721, 51.1058903], [17.0944722, 51.1053142], [17.0945215, 51.1052023], [17.0945922, 51.1050894], [17.0949357, 51.1046914], [17.095251, 51.1043431], [17.0953438, 51.1042406], [17.0950647, 51.1042866], [17.0947216, 51.1043679], [17.0940525, 51.1044462], [17.0940304, 51.1044643], [17.0933719, 51.1045387], [17.0933441, 51.1045245], [17.0929302, 51.1045708], [17.0929767, 51.1047223], [17.0925435, 51.1047372]]], "type": "Polygon"}, "id": "61", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0750394, 51.1049572, 17.0852957, 51.1120336], "geometry": {"coordinates": [[[17.0783754, 51.1101134], [17.0815458, 51.1110555], [17.0843757, 51.1118059], [17.0851608, 51.1120336], [17.0851972, 51.1118602], [17.0851768, 51.1105989], [17.0852957, 51.1096527], [17.0852827, 51.1094061], [17.0851783, 51.1091265], [17.085018, 51.1088485], [17.0849571, 51.1087345], [17.0847428, 51.1084102], [17.0845449, 51.1081301], [17.0844638, 51.1081533], [17.084318, 51.1080162], [17.0841265, 51.107865], [17.0841175, 51.1078589], [17.0839632, 51.1077534], [17.0837251, 51.1076263], [17.083334, 51.1074823], [17.0831793, 51.1073912], [17.0828054, 51.1071708], [17.0829886, 51.1069547], [17.0829644, 51.1069423], [17.0827234, 51.1068491], [17.0825588, 51.1067463], [17.0820464, 51.1064663], [17.0816369, 51.1062066], [17.081218, 51.1059409], [17.0808787, 51.105686], [17.0806687, 51.105498], [17.0805099, 51.1053408], [17.0802385, 51.1051806], [17.0802209, 51.1052172], [17.0801745, 51.1052116], [17.0799981, 51.1051311], [17.0796187, 51.1050573], [17.0796857, 51.1049572], [17.0795387, 51.1050028], [17.0794086, 51.1050479], [17.0792153, 51.1051088], [17.0793349, 51.1052336], [17.0793682, 51.1052955], [17.0793069, 51.1053738], [17.0791507, 51.1054455], [17.0791165, 51.1054785], [17.0789594, 51.105586], [17.0789813, 51.1055986], [17.0789253, 51.1056339], [17.0788855, 51.1056726], [17.0788745, 51.105709], [17.0788996, 51.1057754], [17.0789457, 51.1058383], [17.0790275, 51.1059236], [17.0791776, 51.106098], [17.0793993, 51.1063335], [17.0794402, 51.1063256], [17.0800049, 51.1069667], [17.0798649, 51.1070688], [17.0801749, 51.1074311], [17.077835, 51.1081856], [17.0769758, 51.1084749], [17.0766851, 51.1085748], [17.0766725, 51.1086228], [17.0766, 51.1086505], [17.0766023, 51.1086834], [17.0765938, 51.1087144], [17.0765648, 51.1087505], [17.0765315, 51.1087685], [17.0764332, 51.1087969], [17.0763793, 51.1087979], [17.0763284, 51.1087896], [17.0762653, 51.1087617], [17.0761729, 51.1087855], [17.0761196, 51.1087672], [17.0756635, 51.1088864], [17.0754172, 51.1089235], [17.0752566, 51.1089593], [17.0750586, 51.1090364], [17.0750394, 51.1091574], [17.0763954, 51.1095415], [17.0781423, 51.1100403], [17.0783754, 51.1101134]]], "type": "Polygon"}, "id": "62", "properties": {"kolor": "green"}, "type": "Feature"}, {"bbox": [17.0846549, 51.1062472, 17.0893028, 51.1094975], "geometry": {"coordinates": [[[17.0846549, 51.1080479], [17.0846586, 51.1081188], [17.0847861, 51.1082985], [17.0848819, 51.1084336], [17.0849234, 51.1084979], [17.0850439, 51.108719], [17.085162, 51.1089252], [17.0852917, 51.1091839], [17.0853634, 51.109195], [17.0858108, 51.1091516], [17.0858456, 51.1091539], [17.0859379, 51.109119], [17.0860342, 51.1090494], [17.0854939, 51.1087565], [17.0855523, 51.1087139], [17.0856457, 51.1086253], [17.0857649, 51.1085686], [17.0858128, 51.1085508], [17.0858762, 51.1085354], [17.0859597, 51.1085251], [17.0860563, 51.1085162], [17.0861364, 51.1085144], [17.0862435, 51.1085118], [17.0864193, 51.1085777], [17.0869515, 51.1085837], [17.0874184, 51.1085779], [17.0874176, 51.1087557], [17.0874298, 51.1087714], [17.0879327, 51.1087972], [17.0879236, 51.1094929], [17.088264, 51.1094968], [17.0884396, 51.1094975], [17.0889445, 51.1094743], [17.0889846, 51.1089796], [17.0890267, 51.1084595], [17.0890802, 51.1084626], [17.0893028, 51.1062472], [17.0877042, 51.1063016], [17.08741, 51.1063137], [17.0871862, 51.1063322], [17.0870596, 51.1063427], [17.0868265, 51.1063729], [17.0867212, 51.1064077], [17.0865757, 51.1064843], [17.086415, 51.1066286], [17.0862065, 51.1069851], [17.0860753, 51.1071403], [17.0858806, 51.1072886], [17.0848948, 51.1078708], [17.0847156, 51.1079882], [17.0846549, 51.1080479]]], "type": "Polygon"}, "id": "63", "properties": {"kolor": "green"}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_c9445f7a6add7727a06b175abd88caf3_add({"bbox": [17.0738316, 51.10001, 17.1011468, 51.1196823], "features": [{"bbox": [17.0842465, 51.101883, 17.0846838, 51.1021547], "geometry": {"coordinates": [[[17.0842465, 51.1020716], [17.0843737, 51.1021547], [17.0844076, 51.1021341], [17.0846838, 51.1019666], [17.0845585, 51.101883], [17.0842465, 51.1020716]]], "type": "Polygon"}, "id": "31", "properties": {"kolor": "pink"}, "type": "Feature"}, {"bbox": [17.1010141, 51.1096753, 17.1011468, 51.1097474], "geometry": {"coordinates": [[[17.1011308, 51.1097402], [17.1011468, 51.1096904], [17.1010661, 51.1096798], [17.1010323, 51.1096753], [17.1010141, 51.1097256], [17.1010275, 51.1097363], [17.1011131, 51.1097474], [17.1011308, 51.1097402]]], "type": "Polygon"}, "id": "32", "properties": {"kolor": "pink"}, "type": "Feature"}, {"bbox": [17.0791595, 51.10001, 17.0836832, 51.1042933], "geometry": {"coordinates": [[[17.0791595, 51.1005065], [17.0794332, 51.1005292], [17.0795044, 51.1005061], [17.0795937, 51.1005765], [17.0797494, 51.1006992], [17.0800233, 51.1009398], [17.0799895, 51.1009571], [17.0803291, 51.1012295], [17.0807528, 51.1015636], [17.0808974, 51.1016785], [17.0810134, 51.1017848], [17.081621, 51.102338], [17.0822624, 51.1029108], [17.0827878, 51.1033955], [17.0824422, 51.1040519], [17.0823186, 51.1041832], [17.0822891, 51.1042571], [17.0822847, 51.1042933], [17.0831828, 51.1041719], [17.0829989, 51.1040287], [17.0829419, 51.1039838], [17.0828686, 51.1039259], [17.0828503, 51.1039093], [17.0829536, 51.1036616], [17.0829921, 51.1036301], [17.0830485, 51.1036287], [17.0835368, 51.1037435], [17.0836832, 51.1031758], [17.0832293, 51.1028372], [17.0827908, 51.1025014], [17.0826858, 51.102558], [17.0819877, 51.1020052], [17.0816687, 51.1017048], [17.0816557, 51.1016937], [17.0816188, 51.1016572], [17.0815338, 51.1015773], [17.0815217, 51.1015643], [17.0807088, 51.1007868], [17.0812595, 51.1006642], [17.0815053, 51.1006021], [17.0813424, 51.1003789], [17.0813577, 51.1003748], [17.0813157, 51.100322], [17.0811166, 51.1000694], [17.0810204, 51.1000103], [17.080954, 51.10001], [17.0800368, 51.100243], [17.0798121, 51.1003045], [17.0795681, 51.100379], [17.0791595, 51.1005065]]], "type": "Polygon"}, "id": "33", "properties": {"kolor": "green"}, "type": "Feature"}, {"bbox": [17.0939146, 51.1087787, 17.0962262, 51.1101999], "geometry": {"coordinates": [[[17.0959454, 51.1100288], [17.0958786, 51.110028], [17.0955146, 51.1100206], [17.0953551, 51.1100306], [17.0953104, 51.1100328], [17.0952293, 51.1100366], [17.0950084, 51.1100455], [17.0948894, 51.1100576], [17.0944733, 51.1101038], [17.0940423, 51.1101999], [17.0939997, 51.1101974], [17.0939718, 51.110189], [17.0939452, 51.1101756], [17.0939225, 51.1101564], [17.0939146, 51.1101339], [17.0939199, 51.110108], [17.0943575, 51.1090633], [17.0945683, 51.109099], [17.094845, 51.1091467], [17.0949913, 51.1087787], [17.0952744, 51.108931], [17.0953575, 51.1089709], [17.0954528, 51.1090084], [17.0956161, 51.1090726], [17.0956448, 51.1090838], [17.0957022, 51.1091035], [17.0958414, 51.1091609], [17.095847, 51.109163], [17.0959246, 51.109187], [17.0959615, 51.1091983], [17.0960771, 51.109234], [17.0961697, 51.1092592], [17.0962262, 51.1092757], [17.0961304, 51.1094458], [17.0960451, 51.1096429], [17.0959826, 51.109845], [17.0959454, 51.1100288]]], "type": "Polygon"}, "id": "34", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0827908, 51.1022545, 17.083836, 51.1031758], "geometry": {"coordinates": [[[17.0836832, 51.1031758], [17.0837634, 51.1029172], [17.083836, 51.1027634], [17.0832566, 51.1022545], [17.0827908, 51.1025014], [17.0832293, 51.1028372], [17.0836832, 51.1031758]]], "type": "Polygon"}, "id": "35", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0929621, 51.1085748, 17.0942662, 51.1097265], "geometry": {"coordinates": [[[17.093834, 51.1097265], [17.0942662, 51.1087034], [17.0932403, 51.1085748], [17.0931057, 51.1091263], [17.0930868, 51.109161], [17.092974, 51.10942], [17.0929621, 51.1094639], [17.0930213, 51.1095744], [17.093834, 51.1097265]]], "type": "Polygon"}, "id": "36", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0919778, 51.1054778, 17.0937536, 51.1060958], "geometry": {"coordinates": [[[17.0921782, 51.1060667], [17.0931839, 51.1060832], [17.0936636, 51.1060958], [17.0937314, 51.1058227], [17.0937455, 51.1058106], [17.0937536, 51.1054988], [17.0930051, 51.1054778], [17.092558, 51.1055267], [17.0925681, 51.1055661], [17.092553, 51.1055661], [17.092561, 51.1055934], [17.0924073, 51.1056118], [17.0923668, 51.1056163], [17.0923438, 51.1055552], [17.0922885, 51.1055622], [17.0919778, 51.105601], [17.0921782, 51.1060667]]], "type": "Polygon"}, "id": "37", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0844374, 51.105241, 17.0856488, 51.1062641], "geometry": {"coordinates": [[[17.0845435, 51.1056831], [17.0845671, 51.1057718], [17.0845851, 51.1058165], [17.0848208, 51.1059553], [17.0851762, 51.106158], [17.0852253, 51.1061848], [17.0852894, 51.1062066], [17.0854608, 51.1062533], [17.0855864, 51.1062641], [17.0856205, 51.1062558], [17.0856401, 51.1062379], [17.0856488, 51.1062138], [17.0855971, 51.1061041], [17.0855272, 51.1059603], [17.0853279, 51.1059991], [17.0853004, 51.1059474], [17.0852643, 51.1058743], [17.0854719, 51.1058309], [17.0853426, 51.105566], [17.0852102, 51.1052904], [17.0850542, 51.1052931], [17.0850524, 51.105241], [17.0844374, 51.1052558], [17.0845094, 51.1055304], [17.0845435, 51.1056831]]], "type": "Polygon"}, "id": "38", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0972277, 51.1009338, 17.1002006, 51.1027958], "geometry": {"coordinates": [[[17.0972277, 51.1022573], [17.0979319, 51.102152], [17.0978709, 51.1019804], [17.0978987, 51.1019499], [17.0978064, 51.1017195], [17.097545, 51.1017559], [17.0974934, 51.1016273], [17.0981847, 51.1015175], [17.098073, 51.1010562], [17.0980642, 51.1010063], [17.0983789, 51.1009894], [17.0992096, 51.1009338], [17.0992857, 51.1009708], [17.0993065, 51.1009887], [17.0993368, 51.1010637], [17.0993748, 51.1011424], [17.0994443, 51.1012984], [17.0995156, 51.1013301], [17.0996036, 51.101492], [17.0996291, 51.1015055], [17.099944, 51.1016827], [17.1000018, 51.1018328], [17.1002006, 51.102346], [17.098652, 51.1026102], [17.0975777, 51.1027731], [17.0974286, 51.1027958], [17.0972277, 51.1022573]]], "type": "Polygon"}, "id": "39", "properties": {"kolor": "green"}, "type": "Feature"}, {"bbox": [17.0942579, 51.1037766, 17.0964021, 51.1061199], "geometry": {"coordinates": [[[17.0957355, 51.1041476], [17.0957338, 51.1041207], [17.0960192, 51.1039753], [17.0960413, 51.1039418], [17.0960329, 51.1038857], [17.0961542, 51.1037766], [17.0962654, 51.1044348], [17.0962716, 51.1044935], [17.0962892, 51.1045756], [17.0964021, 51.1046561], [17.0963479, 51.1047114], [17.0962085, 51.1046761], [17.0960047, 51.1046543], [17.0958478, 51.1046472], [17.0957053, 51.1046628], [17.0955453, 51.1046916], [17.0954023, 51.1047341], [17.0951706, 51.1048518], [17.0950504, 51.1049409], [17.0949572, 51.1050436], [17.0949032, 51.1051309], [17.0947414, 51.1056679], [17.0946974, 51.105881], [17.0946933, 51.106079], [17.0946885, 51.1061199], [17.094337, 51.1061123], [17.0943423, 51.1059708], [17.0942579, 51.105937], [17.0942721, 51.1058903], [17.0944722, 51.1053142], [17.0945215, 51.1052023], [17.0945922, 51.1050894], [17.0949357, 51.1046914], [17.095251, 51.1043431], [17.0953438, 51.1042406], [17.0953609, 51.1042217], [17.0956009, 51.104163], [17.0956605, 51.1041659], [17.0957303, 51.1041998], [17.0957564, 51.1042205], [17.0957752, 51.1042476], [17.095802, 51.1043106], [17.0957448, 51.1043194], [17.0957862, 51.1044284], [17.0958955, 51.1044117], [17.0959605, 51.1043839], [17.0959345, 51.1042915], [17.0958782, 51.1042994], [17.0958299, 51.1042148], [17.0957815, 51.1041742], [17.0957355, 51.1041476]]], "type": "Polygon"}, "id": "40", "properties": {"kolor": "green"}, "type": "Feature"}, {"bbox": [17.0912095, 51.1137819, 17.0913881, 51.1138568], "geometry": {"coordinates": [[[17.0913881, 51.1137865], [17.0912142, 51.1137819], [17.0912095, 51.1138522], [17.0913834, 51.1138568], [17.0913881, 51.1137865]]], "type": "Polygon"}, "id": "41", "properties": {"kolor": "orange"}, "type": "Feature"}, {"bbox": [17.0925181, 51.1042406, 17.0953438, 51.1061019], "geometry": {"coordinates": [[[17.0937536, 51.1054988], [17.0930051, 51.1054778], [17.092558, 51.1055267], [17.0925462, 51.105529], [17.0925181, 51.1053962], [17.0925585, 51.1048854], [17.0925305, 51.1048186], [17.0925435, 51.1047372], [17.0929767, 51.1047223], [17.0929302, 51.1045708], [17.0933441, 51.1045245], [17.0933719, 51.1045387], [17.0940304, 51.1044643], [17.0940525, 51.1044462], [17.0947216, 51.1043679], [17.0950647, 51.1042866], [17.0953438, 51.1042406], [17.095251, 51.1043431], [17.0949357, 51.1046914], [17.0945922, 51.1050894], [17.0945215, 51.1052023], [17.0944722, 51.1053142], [17.0942721, 51.1058903], [17.0939024, 51.1058529], [17.0938322, 51.1061019], [17.0936952, 51.1060967], [17.0936636, 51.1060958], [17.0937314, 51.1058227], [17.0937455, 51.1058106], [17.0937536, 51.1054988]]], "type": "Polygon"}, "id": "42", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0891605, 51.1026186, 17.0905175, 51.1037289], "geometry": {"coordinates": [[[17.0892894, 51.1026186], [17.0905175, 51.1026717], [17.0903777, 51.1033567], [17.090309, 51.1035491], [17.0902292, 51.1036698], [17.0898588, 51.1037289], [17.0898468, 51.103662], [17.0897157, 51.103675], [17.089694, 51.103615], [17.0896667, 51.1035598], [17.0896249, 51.1034665], [17.0895181, 51.1033317], [17.0893984, 51.103093], [17.0893309, 51.1029227], [17.0893731, 51.1028368], [17.0893146, 51.1028125], [17.089235, 51.1027548], [17.0891605, 51.1026376], [17.0892894, 51.1026186]]], "type": "Polygon"}, "id": "43", "properties": {"kolor": "green"}, "type": "Feature"}, {"bbox": [17.0869022, 51.1034785, 17.0875605, 51.1038422], "geometry": {"coordinates": [[[17.086981, 51.1038422], [17.0869178, 51.1036329], [17.0869022, 51.1035812], [17.0870777, 51.1035234], [17.087471, 51.1034785], [17.0875605, 51.1037726], [17.0872361, 51.1038116], [17.086981, 51.1038422]]], "type": "Polygon"}, "id": "44", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0919778, 51.1042406, 17.0953438, 51.1061019], "geometry": {"coordinates": [[[17.0925435, 51.1047372], [17.0925305, 51.1048186], [17.0925585, 51.1048854], [17.0925181, 51.1053962], [17.0925462, 51.105529], [17.092558, 51.1055267], [17.0925681, 51.1055661], [17.092553, 51.1055661], [17.092561, 51.1055934], [17.0924073, 51.1056118], [17.0923668, 51.1056163], [17.0923438, 51.1055552], [17.0922885, 51.1055622], [17.0919778, 51.105601], [17.0921782, 51.1060667], [17.0931839, 51.1060832], [17.0936636, 51.1060958], [17.0936952, 51.1060967], [17.0938322, 51.1061019], [17.0939024, 51.1058529], [17.0942721, 51.1058903], [17.0944722, 51.1053142], [17.0945215, 51.1052023], [17.0945922, 51.1050894], [17.0949357, 51.1046914], [17.095251, 51.1043431], [17.0953438, 51.1042406], [17.0950647, 51.1042866], [17.0947216, 51.1043679], [17.0940525, 51.1044462], [17.0940304, 51.1044643], [17.0933719, 51.1045387], [17.0933441, 51.1045245], [17.0929302, 51.1045708], [17.0929767, 51.1047223], [17.0925435, 51.1047372]]], "type": "Polygon"}, "id": "45", "properties": {"kolor": "cadetblue"}, "type": "Feature"}, {"bbox": [17.0750394, 51.1049572, 17.0852957, 51.1120336], "geometry": {"coordinates": [[[17.0783754, 51.1101134], [17.0815458, 51.1110555], [17.0843757, 51.1118059], [17.0851608, 51.1120336], [17.0851972, 51.1118602], [17.0851768, 51.1105989], [17.0852957, 51.1096527], [17.0852827, 51.1094061], [17.0851783, 51.1091265], [17.085018, 51.1088485], [17.0849571, 51.1087345], [17.0847428, 51.1084102], [17.0845449, 51.1081301], [17.0844638, 51.1081533], [17.084318, 51.1080162], [17.0841265, 51.107865], [17.0841175, 51.1078589], [17.0839632, 51.1077534], [17.0837251, 51.1076263], [17.083334, 51.1074823], [17.0831793, 51.1073912], [17.0828054, 51.1071708], [17.0829886, 51.1069547], [17.0829644, 51.1069423], [17.0827234, 51.1068491], [17.0825588, 51.1067463], [17.0820464, 51.1064663], [17.0816369, 51.1062066], [17.081218, 51.1059409], [17.0808787, 51.105686], [17.0806687, 51.105498], [17.0805099, 51.1053408], [17.0802385, 51.1051806], [17.0802209, 51.1052172], [17.0801745, 51.1052116], [17.0799981, 51.1051311], [17.0796187, 51.1050573], [17.0796857, 51.1049572], [17.0795387, 51.1050028], [17.0794086, 51.1050479], [17.0792153, 51.1051088], [17.0793349, 51.1052336], [17.0793682, 51.1052955], [17.0793069, 51.1053738], [17.0791507, 51.1054455], [17.0791165, 51.1054785], [17.0789594, 51.105586], [17.0789813, 51.1055986], [17.0789253, 51.1056339], [17.0788855, 51.1056726], [17.0788745, 51.105709], [17.0788996, 51.1057754], [17.0789457, 51.1058383], [17.0790275, 51.1059236], [17.0791776, 51.106098], [17.0793993, 51.1063335], [17.0794402, 51.1063256], [17.0800049, 51.1069667], [17.0798649, 51.1070688], [17.0801749, 51.1074311], [17.077835, 51.1081856], [17.0769758, 51.1084749], [17.0766851, 51.1085748], [17.0766725, 51.1086228], [17.0766, 51.1086505], [17.0766023, 51.1086834], [17.0765938, 51.1087144], [17.0765648, 51.1087505], [17.0765315, 51.1087685], [17.0764332, 51.1087969], [17.0763793, 51.1087979], [17.0763284, 51.1087896], [17.0762653, 51.1087617], [17.0761729, 51.1087855], [17.0761196, 51.1087672], [17.0756635, 51.1088864], [17.0754172, 51.1089235], [17.0752566, 51.1089593], [17.0750586, 51.1090364], [17.0750394, 51.1091574], [17.0763954, 51.1095415], [17.0781423, 51.1100403], [17.0783754, 51.1101134]]], "type": "Polygon"}, "id": "46", "properties": {"kolor": "green"}, "type": "Feature"}, {"bbox": [17.0738316, 51.1103157, 17.0903171, 51.1196823], "geometry": {"coordinates": [[[17.080179, 51.1196247], [17.0803444, 51.1195853], [17.080512, 51.1195593], [17.0807784, 51.1195206], [17.0808039, 51.1195177], [17.0812312, 51.1194698], [17.0818803, 51.119397], [17.0819342, 51.1193711], [17.0819395, 51.1193478], [17.0816024, 51.1189172], [17.0812976, 51.1185662], [17.0809582, 51.1182448], [17.0808447, 51.1181106], [17.0808186, 51.118057], [17.0807861, 51.1179721], [17.0807727, 51.117909], [17.0807544, 51.117831], [17.0807628, 51.1177234], [17.0807895, 51.1176014], [17.0808656, 51.1174823], [17.0809735, 51.1173667], [17.0811016, 51.1172577], [17.0811689, 51.1171701], [17.0814891, 51.1171248], [17.0820274, 51.1169799], [17.0825306, 51.1170311], [17.0827043, 51.1170385], [17.0829448, 51.1170357], [17.0833017, 51.1170192], [17.0837005, 51.1170018], [17.0842237, 51.1170135], [17.0847499, 51.1170356], [17.0851249, 51.117055], [17.0855273, 51.1170848], [17.0863006, 51.1171447], [17.0870325, 51.1172249], [17.0878882, 51.1173326], [17.088376, 51.1174063], [17.089235, 51.1175402], [17.0893455, 51.1175549], [17.0894621, 51.1175623], [17.0895788, 51.1175605], [17.089689, 51.1175412], [17.0898105, 51.1175064], [17.0898946, 51.1174669], [17.0899297, 51.1174424], [17.0899306, 51.1174004], [17.0897847, 51.1172557], [17.0898386, 51.1172202], [17.0899155, 51.1171497], [17.0900491, 51.1170685], [17.0901293, 51.1164222], [17.0902966, 51.1138587], [17.0903171, 51.1136103], [17.0902462, 51.1135194], [17.0866026, 51.1128163], [17.0859166, 51.1126037], [17.0853348, 51.1124125], [17.085289, 51.1124262], [17.0850948, 51.1123447], [17.0850372, 51.1122663], [17.0841806, 51.1120225], [17.0837156, 51.1118908], [17.0836795, 51.1119402], [17.0832286, 51.1125562], [17.083395, 51.1126079], [17.0832389, 51.1128232], [17.0833185, 51.1128512], [17.0833287, 51.1128418], [17.083875, 51.1130295], [17.0844364, 51.1129352], [17.0852628, 51.1132393], [17.0854523, 51.1132763], [17.0853876, 51.1134923], [17.085276, 51.1136417], [17.0851585, 51.1137336], [17.0847189, 51.1140001], [17.0845237, 51.114083], [17.0842114, 51.1141782], [17.0841415, 51.1140938], [17.0835112, 51.1138521], [17.0837903, 51.1135914], [17.0832883, 51.1133831], [17.0832812, 51.1130879], [17.0831739, 51.1129738], [17.0830509, 51.1128975], [17.082845, 51.1127851], [17.0814895, 51.1121029], [17.0814462, 51.1112392], [17.0788282, 51.1104843], [17.0782352, 51.1103157], [17.0777934, 51.1110604], [17.0778226, 51.1110722], [17.0775668, 51.1118884], [17.0775766, 51.1120083], [17.0776028, 51.11207], [17.0776625, 51.1121321], [17.0777359, 51.1122477], [17.077891, 51.1125403], [17.0779533, 51.1125628], [17.0781102, 51.1128893], [17.0780962, 51.1129256], [17.0780592, 51.1129638], [17.0779701, 51.1129077], [17.0779108, 51.1129096], [17.0770374, 51.1130789], [17.0767389, 51.1131395], [17.0758712, 51.1132886], [17.0757646, 51.1133069], [17.075859, 51.1138306], [17.0758698, 51.1140989], [17.0757431, 51.1140954], [17.0757632, 51.1143115], [17.0757975, 51.1146915], [17.0748044, 51.1148488], [17.0739685, 51.1147211], [17.0738316, 51.1147393], [17.0740984, 51.1151021], [17.0741479, 51.1151763], [17.0742011, 51.1152458], [17.0744292, 51.1153421], [17.0749365, 51.115546], [17.0752704, 51.1156386], [17.0756766, 51.1157358], [17.075959, 51.1157702], [17.076231, 51.1157829], [17.0765286, 51.1157964], [17.0765611, 51.1158502], [17.0768694, 51.1159384], [17.0773904, 51.1159866], [17.0777861, 51.1159394], [17.0777749, 51.1160594], [17.0777781, 51.1161305], [17.0783202, 51.1160874], [17.0782897, 51.1165827], [17.0783137, 51.1170572], [17.0783174, 51.1171822], [17.0775232, 51.1171687], [17.076788, 51.1171759], [17.0764725, 51.1171804], [17.0762297, 51.1171937], [17.0762533, 51.1172594], [17.0760725, 51.1172617], [17.0755972, 51.1173193], [17.0755505, 51.1173432], [17.0759303, 51.1176828], [17.0762196, 51.1175555], [17.0764456, 51.1176735], [17.0765428, 51.1177578], [17.0767615, 51.1176481], [17.0768506, 51.1177328], [17.0768256, 51.1177779], [17.0769209, 51.1178537], [17.0771036, 51.1181194], [17.0773915, 51.118152], [17.077757, 51.1182314], [17.0783344, 51.1183799], [17.0786766, 51.1185117], [17.0789852, 51.1186615], [17.0790611, 51.1187056], [17.0791924, 51.1187892], [17.0793298, 51.1188965], [17.0794551, 51.1190157], [17.0796237, 51.1192082], [17.0797219, 51.1193548], [17.0797854, 51.1194868], [17.0798594, 51.1196335], [17.0798862, 51.1196823], [17.080179, 51.1196247]]], "type": "Polygon"}, "id": "47", "properties": {"kolor": "green"}, "type": "Feature"}, {"bbox": [17.0846549, 51.1062472, 17.0893028, 51.1094975], "geometry": {"coordinates": [[[17.0846549, 51.1080479], [17.0846586, 51.1081188], [17.0847861, 51.1082985], [17.0848819, 51.1084336], [17.0849234, 51.1084979], [17.0850439, 51.108719], [17.085162, 51.1089252], [17.0852917, 51.1091839], [17.0853634, 51.109195], [17.0858108, 51.1091516], [17.0858456, 51.1091539], [17.0859379, 51.109119], [17.0860342, 51.1090494], [17.0854939, 51.1087565], [17.0855523, 51.1087139], [17.0856457, 51.1086253], [17.0857255, 51.1085911], [17.0858084, 51.1085584], [17.0858621, 51.1085448], [17.0859105, 51.1085374], [17.0859781, 51.108529], [17.0860713, 51.1085217], [17.0861382, 51.1085182], [17.0862269, 51.1085178], [17.0862462, 51.1087534], [17.0862553, 51.1089692], [17.0863886, 51.1089395], [17.0864697, 51.1089328], [17.0864611, 51.108835], [17.0864193, 51.1085777], [17.0869515, 51.1085837], [17.0874184, 51.1085779], [17.0874176, 51.1087557], [17.0874298, 51.1087714], [17.0879327, 51.1087972], [17.0879236, 51.1094929], [17.088264, 51.1094968], [17.0884396, 51.1094975], [17.0889445, 51.1094743], [17.0889846, 51.1089796], [17.0890267, 51.1084595], [17.0890802, 51.1084626], [17.0893028, 51.1062472], [17.0877042, 51.1063016], [17.08741, 51.1063137], [17.0871862, 51.1063322], [17.0870596, 51.1063427], [17.0868265, 51.1063729], [17.0867212, 51.1064077], [17.0865757, 51.1064843], [17.086415, 51.1066286], [17.0862065, 51.1069851], [17.0860753, 51.1071403], [17.0858806, 51.1072886], [17.0848948, 51.1078708], [17.0847156, 51.1079882], [17.0846549, 51.1080479]]], "type": "Polygon"}, "id": "48", "properties": {"kolor": "green"}, "type": "Feature"}], "type": "FeatureCollection"});
 
+        
+    
+            geo_json_c9445f7a6add7727a06b175abd88caf3.addTo(map_adf0e48439bd1785f3897734063e75bd);
         
 </script>
 </html>

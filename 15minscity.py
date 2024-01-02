@@ -359,7 +359,7 @@ def plot(loc, df_amn):
     lon = loc[1]
 
     # Plot maps
-    map = folium.Map(location = [lat, lon], tiles = "Stamen Toner", zoom_start=14)
+    map = folium.Map(location = [lat, lon],attr="<a href='https://www.openstreetmap.org/about/'>OpenStreetMaps contributors</a>" , zoom_start=14)
 
     # Mark user location
     folium.Circle(
